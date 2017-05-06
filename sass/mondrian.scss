@@ -6,7 +6,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+body {
+  background:  black;
+}
 /* 5 columns */
 /* 5 rows*/
 
@@ -21,6 +23,7 @@ html {
   grid-template-rows: 17px 53px 275px 96px 225px 125px 25px;
   grid-gap: 14px 16px;
   background: black;
+  margin: 0 auto;
 
 
 }
@@ -129,3 +132,11 @@ div div {
   background:black;
 }
  
+
+ @media only screen and (min-width: 768px) and (max-width: 1025px) {
+
+
+  .wrapper {
+    transform: rotate(180deg);
+  }
+ }
