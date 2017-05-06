@@ -1,0 +1,29 @@
+
+/*#caterpillar {
+	width: 25em;
+	height:  25em;
+	//left: 30%;
+	position: absolute;
+	margin-left: 0;
+	display:none;
+}
+
+#butterfly {
+	display: none;
+	width: 25em;
+	height: 25em;
+	//: 30%;
+	position: absolute;
+}
+
+*/
+ 
+ svg {
+ 	height: 100%;
+ 	width:  100%;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	transition: transform rx 1s;
+ 	
+ }

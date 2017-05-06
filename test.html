@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		 
+		<link href="svg.css" rel="stylesheet">
+		<script src="scripts.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="maincontent">
+
+		<!--<object type="image/svg+xml" id='caterpillar' data="noun_1026147_cc.svg">
+		</object>
+		<object type="image/svg+xml" id="pig" data="pig_noun_1021476_cc.svg">
+		</object>
+
+		<object type="image/svg+xml" id='butterfly' data="noun_1026142_cc.svg">
+		</object>	 
+		-->
+
+		<svg>
+		<!--<ellipse id="ellipse" cx="50" cy="50" rx="50" ry="50" x="200px" y="200px" >-->
+		<rect id="ellipse" rx="0" ry="0" width="4em" height="4em">
+		 <script> var tettt = document.getElementById("ellipse");
+
+ 
+ tettt.style.border = "1px solid black";
+</script>
+		 <animate attributeName="ry" from="0" to="50%"
+        dur="10s" repeatCount="indefinite"/></animate>
+		<style>
+		@keyframes moving {
+			0% {transform: translate(0px, 0px) rotate(0deg); fill: blue;}
+
+			30% {transform: translate(400px, 0px) rotate(270deg); fill: yellow;}
+			
+			/*55% {transform: rotate(40deg)}*/
+			60% {transform: translate(900px, 200px) rotate(540deg) ; fill: green;}
+			/*70% {transform: rotate(170deg)}*/
+			90% {transform: translate(200px, 100px) rotate(810deg); fill: purple;}
+			100% {transform: translate(0px, 0px) rotate(360deg); fill: blue;}
+
+			 
+
+		}
+
+		@keyframes rotation {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(359deg);}
+
+		}
+ 
+	   #ellipse {
+	   	
+	   	/*animation:  moving 10s linear infinite, rotation 2s linear infinite;*/
+	   	animation-name:  moving;
+	   	animation-duration:  10s, 2s;
+	   	animation-timing-function:  linear;
+	   	animation-iteration-count:  infinite, infinite;
+	   	transform-origin: 50% 50%;
+
+	   
+	   	
+	   }
+		</style>
+		
+		 
+
+		 </rect>
+		</svg>
+
+		</div>
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+		</script>
+	</body>
+</html>
