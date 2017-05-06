@@ -162,10 +162,98 @@ div div {
   background: black;
 }
 
+/* upside down mondrian done in 2 ways, simple and not so simple (just to make sure I didn't take the easy way)*/
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
+  /* the easy way, just rotate the wrapper*/
   /* line 139, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
   .wrapper {
     transform: rotate(180deg);
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 700px) {
+  /* the longer way, recode.  .. */
+  /* line 146, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .wrapper {
+    grid-template-columns: 122px 75px 225px 290px 71px 290px;
+    grid-template-rows: 25px 125px 225px 96px 275px 53px 17px;
+  }
+  /* line 151, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .wrapper div {
+    /* only the individual letter block is flipped upside down, to get the letters upside down */
+    transform: rotate(180deg);
+  }
+  /* line 155, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .m {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    padding-left: 30%;
+    background: black;
+  }
+  /* line 161, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .l {
+    grid-row: 1 / 2;
+    grid-column: 3 / 5;
+    padding-left: 34%;
+  }
+  /* line 166, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .k {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+  }
+  /* line 171, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .j {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    background: yellow;
+  }
+  /* line 178, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .i {
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+  }
+  /* line 182, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .h {
+    grid-row: 3/ 4;
+    grid-column: 4 / 5;
+    background: blue;
+  }
+  /* line 187, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .g {
+    grid-row: 1/ 4;
+    grid-column: 5 / 6;
+  }
+  /* line 191, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .f {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+  }
+  /* line 196, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .e {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+  }
+  /* line 200, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .d {
+    grid-row: 6 / 8;
+    grid-column: 1 / 2;
+    background: black;
+  }
+  /* line 205, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .c {
+    grid-row: 4 / 8;
+    grid-column: 2 / 4;
+  }
+  /* line 210, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .b {
+    grid-row: 4 / 7;
+    grid-column: 4 / 6;
+  }
+  /* line 214, C:/Users/winescape-xx/Desktop/assign4/sass/mondrian.scss */
+  .a {
+    grid-row: 7 / 8;
+    grid-column: 4 / 6;
+    background: red;
   }
 }
 
