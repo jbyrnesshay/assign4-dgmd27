@@ -2,7 +2,8 @@
 @mixin border-define($top, $right, $bottom, $left, $color) {
 	//$list: $top $right $bottom $left;
 	$min: 1px;
-			$topx: $top * $min;
+			//$topx: $top * $min;
+			$topx:  $top * $min;
 			$rightx: $right * $min;
 			$bottomx: $bottom * $min;
 			$leftx: $left * $min;
@@ -63,7 +64,7 @@ nav ul li {
 	 margin: 0;
 	 background: yellow;
 	 
-	@include border-define(1,1,1,0, blue);
+	@include border-define(5,1,1,0, blue);
 	
 }
 nav li a{
@@ -119,11 +120,15 @@ header:after{
 	article {
 	background: aqua;
 	flex: 1 1 48%;
-	margin: 1%;
+	//margin: 1%;
 	margin-bottom: .5em;
+	//margin-right: 1em;
+	padding: 0 1em 0 1em;
 
 }
-
+article:nth-of-type(even) {
+	margin-left:  1em;
+}
  
 .row {
 	display:flex;

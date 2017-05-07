@@ -1,21 +1,21 @@
 /* border box everything in the universe, and what comes before and after, by Paul Irish 
 http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-/* line 19, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 20, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 html {
   box-sizing: border-box;
 }
 
-/* line 22, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 23, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 25, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 26, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 body#mondrian {
   background: black;
 }
 
-/* line 29, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 30, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 body#flexbox {
   position: relative;
   width: 100%;
@@ -25,13 +25,13 @@ body#flexbox {
   margin: 0 auto;
 }
 
-/* line 38, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 39, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 .wrapper {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 46, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 47, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 nav ul {
   margin-top: 0;
   margin-left: 0;
@@ -42,7 +42,7 @@ nav ul {
   justify-content: flex-start;
 }
 
-/* line 56, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 57, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 nav ul li:first-of-type {
   border-top: 1px solid blue;
   border-right: 1px solid blue;
@@ -50,19 +50,19 @@ nav ul li:first-of-type {
   border-left: 1px solid blue;
 }
 
-/* line 59, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 60, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 nav ul li {
   flex-basis: 10%;
   padding: 0;
   margin: 0;
   background: yellow;
-  border-top: 1px solid blue;
+  border-top: 5px solid blue;
   border-right: 1px solid blue;
   border-bottom: 1px solid blue;
   border-left: 0px solid blue;
 }
 
-/* line 69, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 70, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 nav li a {
   text-decoration: none;
   width: 100%;
@@ -73,7 +73,7 @@ nav li a {
 }
 
 /* this is setting up the transparent background image in the header */
-/* line 81, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 82, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 header {
   height: 10em;
   width: 100%;
@@ -84,7 +84,7 @@ header {
   overflow: hidden;
 }
 
-/* line 96, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 97, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 header:after {
   width: 100%;
   height: 100%;
@@ -100,15 +100,20 @@ header:after {
   background-size: cover;
 }
 
-/* line 119, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 120, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 article {
   background: aqua;
   flex: 1 1 48%;
-  margin: 1%;
   margin-bottom: .5em;
+  padding: 0 1em 0 1em;
 }
 
-/* line 128, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 129, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+article:nth-of-type(even) {
+  margin-left: 1em;
+}
+
+/* line 133, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 .row {
   display: flex;
   flex-flow: row wrap;
@@ -116,12 +121,12 @@ article {
 }
 
 @media screen and (max-width: 699px) {
-  /* line 136, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+  /* line 141, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
   .row {
     display: flex;
     flex-flow: row wrap;
   }
-  /* line 141, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+  /* line 146, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
   article {
     flex: 1 0 100%;
     background: orange;
