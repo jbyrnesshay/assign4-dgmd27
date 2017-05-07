@@ -118,7 +118,9 @@ header:after{
 
 	article {
 	background: aqua;
-	flex: 1 1 50%;
+	flex: 1 1 48%;
+	margin: 1%;
+	margin-bottom: .5em;
 
 }
 

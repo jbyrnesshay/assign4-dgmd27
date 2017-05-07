@@ -103,10 +103,12 @@ header:after {
 /* line 119, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 article {
   background: aqua;
-  flex: 1 1 50%;
+  flex: 1 1 48%;
+  margin: 1%;
+  margin-bottom: .5em;
 }
 
-/* line 126, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+/* line 128, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
 .row {
   display: flex;
   flex-flow: row wrap;
@@ -114,12 +116,12 @@ article {
 }
 
 @media screen and (max-width: 699px) {
-  /* line 134, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+  /* line 136, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
   .row {
     display: flex;
     flex-flow: row wrap;
   }
-  /* line 139, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
+  /* line 141, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.css */
   article {
     flex: 1 0 100%;
     background: orange;
