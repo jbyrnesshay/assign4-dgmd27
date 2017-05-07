@@ -31,7 +31,7 @@
 		<svg>
 		<!--<ellipse id="ellipse" cx="50" cy="50" rx="50" ry="50" x="200px" y="200px" >-->
 		<g id="ellipse">
-		<rect rx="0" ry="100" width="4em" height="4em">
+		<rect class="obj" rx="0" ry="100" width="4em" height="4em">
 
 		<!-- the below animate works with non-zero values of ry set in rect above -->
 		 <animate attributeName="rx" from="0" to="50"
@@ -52,14 +52,7 @@
 			 
 
 		}
-
-		@keyframes rotation {
-			from {transform: rotate(0deg);}
-			to {transform: rotate(359deg);}
-
-		}
- 
-	   #ellipse {
+ #ellipse  {
 	   	
 	   	/*animation:  moving 10s linear infinite, rotation 2s linear infinite;*/
 	   	animation-name:  moving;
@@ -71,12 +64,19 @@
 	   
 	   	
 	   }
+		@keyframes rotation {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(359deg);}
+
+		}
+ 
+	  
 		</style>
 		
 		 
 
 		 </rect>
-		<text x="0" y="50" font-family="Verdana" font-size="35" fill="blue">Hello</text>
+		<text x="0" y="50" class="obj" font-family="Verdana" font-size="35" fill="blue">Hello</text>
 		 </g>
 		  <script> var tettt = document.getElementById("ellipse");
 				//tettt.setAttribute("rx", 100);

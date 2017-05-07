@@ -1,0 +1,144 @@
+
+@mixin border-define($top, $right, $bottom, $left, $color) {
+	//$list: $top $right $bottom $left;
+	$min: 1px;
+			$topx: $top * $min;
+			$rightx: $right * $min;
+			$bottomx: $bottom * $min;
+			$leftx: $left * $min;
+	border-top: $topx solid $color;
+	border-right: $rightx solid $color;
+	border-bottom: $bottomx solid $color;
+	border-left: $leftx solid $color;
+	 
+}
+
+
+/* border box everything in the universe, and what comes before and after, by Paul Irish 
+http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body#mondrian {
+	background: black;
+}
+
+body#flexbox {
+	position:relative;
+	width: 100%;
+top: 0;
+	left: 0;
+	bottom: 0;
+	//background: blue;
+	margin: 0 auto;
+}
+.wrapper {
+	//position: absolute;
+	 
+	width: 80%;
+	margin: 0 auto;
+	 
+	//background:green;
+}
+nav ul {
+	margin-top: 0;
+	margin-left: 0;
+	padding:0;
+	display: flex;
+	flex-flow: row nowrap;
+	list-style:none;
+	justify-content: flex-start;
+	//align-items: center;
+}
+nav ul li:first-of-type {
+	@include border-define(1,1,1,1,blue);
+}
+nav ul li {
+	 flex-basis: 10%;
+	// flex: .5 1 10%;
+	 padding: 0;
+	 margin: 0;
+	 background: yellow;
+	 
+	@include border-define(1,1,1,0, blue);
+	
+}
+nav li a{
+	text-decoration: none;
+	
+	width: 100%;
+	display:block;
+	padding: 0;
+	margin: 0;
+	text-align:center;
+
+}
+
+/* this is setting up the transparent background image in the header */
+header {
+
+	height: 10em;
+	width: 100%;  
+    position: relative;
+    letter-spacing: .4em;
+    border-bottom: 1px solid black;
+    z-index: 0;  
+   
+    overflow:hidden;
+  
+   
+     
+}
+ 
+header:after{
+		width: 100%;
+		height: 100%;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	content: "";
+    	background: url("../img/background2x_1200.png") no-repeat;
+    	opacity: 0.6;
+    	z-index:-3;
+    	display: block;
+    	 background-position: 50% 50%;
+  		background-size: cover;
+  	 
+    
+    	 
+	}
+
+	#maincontent {
+		
+
+	}
+
+	article {
+	background: aqua;
+	flex: 1 1 50%;
+
+}
+
+ 
+.row {
+	display:flex;
+		flex-flow: row wrap;
+flex: 1 1 auto;
+;
+}
+
+@media screen and (max-width: 699px) {
+	.row {
+		display:flex;
+		flex-flow: row wrap;
+//flex: 1 1 auto;
+	}
+	article {
+		flex: 1 0 100%;
+
+		background: orange;
+	}
+}

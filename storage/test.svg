@@ -1,0 +1,16 @@
+
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<style type="text/css">
+	 .ellipse {
+	 display:none;
+	 }
+	 .circle {
+	 fill: green;
+	 }
+
+	    <animate id="animation" begin="indefinite" fill="freeze" attributeName="fill" dur="500ms" to="blue"></animate>
+</style>
+	 <g class="circle"><ellipse cx="0" cy="0" rx="0" ry="0"/></g>
+	 <g class="ellipse"><ellipse id="ellipse" cx="25" cy="50" rx="100" ry="50"/></g>
+</svg>

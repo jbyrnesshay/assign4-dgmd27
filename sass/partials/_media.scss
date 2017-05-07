@@ -1,0 +1,92 @@
+
+
+
+ //this needs to be cleaned up, specify the 2nd query is not in a tablet query, can be neatened 
+//upside down mondrian done in 2 ways, simple and not so simple (just to make sure I didn't take the easy way)
+ @media only screen and (min-width: 768px) and (max-width: 1025px) {
+  // the easy way, just rotate the wrapper
+
+  .mondrian_wrapper {
+    transform: rotate(180deg);
+  }
+ }
+
+
+ @media only screen and (min-width: 480px) and (max-width: 700px) {
+// the longer way, recode. 
+.mondrian_wrapper {
+  grid-template-columns: 122px 75px 225px 290px 71px 290px;
+  grid-template-rows: 25px 125px 225px 96px 275px 53px 17px;
+
+}
+ .mondrian_wrapper div {
+//only the individual letter block is flipped upside down, to get the letters upside down 
+    transform: rotate(180deg);
+  }
+  .m {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  padding-left: 30%;
+  background: black;
+}
+.l {
+  grid-row: 1 / 2;
+  grid-column: 3 / 5;
+  padding-left: 34%;
+}
+.k {
+  grid-row: 2 / 3;
+  grid-column: 4 / 5;
+
+}
+.j {
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
+  background: yellow;
+  background: green;
+
+}
+
+.i {
+  grid-row: 2 / 4;
+  grid-column: 2 / 4;
+} 
+.h {
+  grid-row: 3/ 4;
+  grid-column: 4 / 5;
+   background:blue;
+}
+.g {
+  grid-row: 1/ 4;
+  grid-column: 5 / 6;
+}
+.f {
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+ 
+}
+.e {
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+}
+.d {
+  grid-row: 6 / 8;
+  grid-column: 1 / 2;
+  background: black;
+}
+.c {
+  grid-row: 4 / 8;
+  grid-column: 2 / 4;
+
+}
+.b {
+  grid-row: 4 / 7;
+  grid-column: 4 / 6;
+} 
+.a {
+  grid-row: 7 / 8;
+  grid-column: 4 / 6;
+  background: red;
+}
+ }
+ 
