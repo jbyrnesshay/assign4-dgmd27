@@ -1,0 +1,13 @@
+$first-color: hsl(220, 100%, 50%);
+$first-color-darken: darken($first-color, 15%);
+$prime-color: desaturate($first-color-darken, 35%);
+$brown: desaturate(darken(brown, 15%), 15%);
+
+$second-color: adjust-hue($first-color, 180);
+$fourth-color: adjust-hue($first-color, 30);
+$fifth-color: adjust-hue($first-color, -34);
+$background-color: lighten($second-color, 42%);
+$third-color: lighten($first-color,  46%);
+
+$panel-color: mix($third-color, $background-color, 50%);
+$background-heading: saturate(darken($panel-color, 7%), 30%);
