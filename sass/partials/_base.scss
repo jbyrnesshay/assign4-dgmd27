@@ -40,6 +40,7 @@ body#flexbox {
 
     //background: blue;
     margin: 0 auto;
+    background:white;
 }
 
 .wrapper {
@@ -155,32 +156,34 @@ header:after {
 article {
     background: desaturate(darken(snow, 3%), 60%);
     background: $panel-color;
-     flex: 0 1 48%;
-
+     flex: 1 1 46%;
+	 
     //margin: 1%;
     margin-bottom: .5em;
 
     //margin-right: 1em;
     padding: 0 1em 0 1em;
     //display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 
 }
+ 
 .zero {
 	flex: 1 1 50%;
-	 flex-row: row wrap;
+	 flex-row: row nowrap;
 }
 
 .img-article {
-    flex: 1 0 100%;
-
+    flex: 1 1 100%;
+	justify-content: space-between;
     //margin: 1%;
     margin-bottom: .5em;
 
     //margin-right: 1em;
     padding: 0 1em 0 1em;
-    flex-row: row wrap;
+    flex-row: row nowrap;
     display: flex;
+
 }
 
 .aarticle {
@@ -193,7 +196,9 @@ article {
     padding: 0 1em 0 1em;
     display: flex;
 }
-
+.two, .three {
+   margin-right: 2em;
+}
 li a {
     background: $third-color;
 }
@@ -203,7 +208,7 @@ li a:hover {
 }
 
 article:nth-of-type(even) {
-    margin-left: 1em;
+  //  margin-right: 1em;
 }
 
 h2, h3 {
@@ -219,7 +224,7 @@ nav {
 .row {
     display: flex;
     flex-flow: row wrap;
-    flex: 1 1 auto;
+    flex: 1 1 100%;
 }
 
 @media screen and (max-width: 699px) {

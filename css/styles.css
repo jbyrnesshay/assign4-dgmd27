@@ -25,26 +25,27 @@ body#flexbox {
   left: 0;
   bottom: 0;
   margin: 0 auto;
+  background: white;
 }
 
-/* line 45, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 46, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .wrapper {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 53, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 54, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 h2, h3, h4, h5, h6 {
   font-family: 'Josefin Sans';
   flex: 1 1 100%;
 }
 
-/* line 58, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 59, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 h2 {
   font-family: 'Cedarville Cursive';
 }
 
-/* line 62, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 63, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .headertext {
   font-weight: bolder;
   font-family: "Fredericka the Great";
@@ -53,13 +54,13 @@ h2 {
   flex: 0 0 50%;
 }
 
-/* line 70, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 71, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 h1 {
   font-family: "Alegreya";
   color: #5e2424;
 }
 
-/* line 75, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 76, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .flex {
   display: flex;
   flex-flow: row nowrap;
@@ -68,13 +69,13 @@ h1 {
 }
 
 /* adjusts the size of first letter in h1.  I had already set up a span to uppercase it and float it,  so I stuckc with it */
-/* line 84, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 85, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 h1 span {
   font-size: 3em;
   text-transform: uppercase;
 }
 
-/* line 89, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 90, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 nav ul {
   margin-top: 0;
   margin-left: 0;
@@ -86,7 +87,7 @@ nav ul {
   margin-bottom: 0;
 }
 
-/* line 102, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 103, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 nav ul li:first-of-type {
   border-top: 2px solid black;
   border-right: 1px solid black;
@@ -95,7 +96,7 @@ nav ul li:first-of-type {
   border-style: solid;
 }
 
-/* line 106, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 107, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 nav ul li {
   flex-basis: 10%;
   padding: 0;
@@ -108,7 +109,7 @@ nav ul li {
   border-style: solid;
 }
 
-/* line 117, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 118, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 nav li a {
   text-decoration: none;
   width: 100%;
@@ -119,7 +120,7 @@ nav li a {
 }
 
 /* this is setting up the transparent background image in the header */
-/* line 128, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 129, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 header {
   height: 10em;
   width: 100%;
@@ -130,7 +131,7 @@ header {
   overflow: hidden;
 }
 
-/* line 138, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 139, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 header:after {
   width: 100%;
   height: 100%;
@@ -146,32 +147,33 @@ header:after {
   background-size: cover;
 }
 
-/* line 155, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 156, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 article {
   background: #f9f1f1;
   background: #f5f1eb;
-  flex: 0 1 48%;
+  flex: 1 1 46%;
   margin-bottom: .5em;
   padding: 0 1em 0 1em;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
 }
 
-/* line 169, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 171, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .zero {
   flex: 1 1 50%;
-  flex-row: row wrap;
+  flex-row: row nowrap;
 }
 
-/* line 174, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 176, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .img-article {
-  flex: 1 0 100%;
+  flex: 1 1 100%;
+  justify-content: space-between;
   margin-bottom: .5em;
   padding: 0 1em 0 1em;
-  flex-row: row wrap;
+  flex-row: row nowrap;
   display: flex;
 }
 
-/* line 186, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 189, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .aarticle {
   flex: 0 1 48%;
   margin-bottom: .5em;
@@ -179,47 +181,47 @@ article {
   display: flex;
 }
 
-/* line 197, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 199, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+.two, .three {
+  margin-right: 2em;
+}
+
+/* line 202, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 li a {
   background: #ebf1ff;
 }
 
-/* line 201, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 206, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 li a:hover {
   background: #00e6ff;
 }
 
-/* line 205, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
-article:nth-of-type(even) {
-  margin-left: 1em;
-}
-
-/* line 209, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 214, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 h2, h3 {
   background: #f3e2c9;
   margin-left: 1em;
   margin-right: 1em;
 }
 
-/* line 215, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 220, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 nav {
   background: #1f4693;
 }
 
-/* line 219, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 224, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .row {
   display: flex;
   flex-flow: row wrap;
-  flex: 1 1 auto;
+  flex: 1 1 100%;
 }
 
 @media screen and (max-width: 699px) {
-  /* line 226, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+  /* line 231, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   .row {
     display: flex;
     flex-flow: row wrap;
   }
-  /* line 234, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+  /* line 239, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   article {
     flex: 1 0 100%;
     background: orange;
