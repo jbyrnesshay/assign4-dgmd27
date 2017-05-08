@@ -156,7 +156,7 @@ header:after {
 article {
     background: desaturate(darken(snow, 3%), 60%);
     background: $panel-color;
-     flex: 1 1 46%;
+     flex: 0 1 49%;
 	 
     //margin: 1%;
     margin-bottom: .5em;
@@ -165,10 +165,10 @@ article {
     padding: 0 1em 0 1em;
     //display: flex;
     flex-flow: column nowrap;
-
+    
 }
  
-.zero {
+.one {
 	flex: 1 1 50%;
 	 flex-row: row nowrap;
 }
@@ -196,9 +196,9 @@ article {
     padding: 0 1em 0 1em;
     display: flex;
 }
-.two, .three {
-   margin-right: 2em;
-}
+/*article:nth-of-type(even) {
+   margin-left: 2em;
+}*/
 li a {
     background: $third-color;
 }
@@ -225,6 +225,7 @@ nav {
     display: flex;
     flex-flow: row wrap;
     flex: 1 1 100%;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 699px) {
