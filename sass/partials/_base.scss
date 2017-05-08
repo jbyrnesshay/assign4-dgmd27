@@ -172,16 +172,21 @@ article {
 	flex: 1 1 50%;
 	 flex-row: row nowrap;
 }
-
+.col-2 {
+	flex: 0 1 66%;
+}
+.col-1 {
+	flex: 0 1 32%;
+}
 .img-article {
-    flex: 1 1 100%;
-	justify-content: space-between;
+    flex: 0 1 40%;
+	//justify-content: space-between;
     //margin: 1%;
     margin-bottom: .5em;
 
     //margin-right: 1em;
     padding: 0 1em 0 1em;
-    flex-row: row nowrap;
+    flex-row: column nowrap;
     display: flex;
 
 }
@@ -223,7 +228,7 @@ nav {
 
 .row {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     flex: 1 1 100%;
     justify-content: space-between;
 }
@@ -231,7 +236,7 @@ nav {
 @media screen and (max-width: 699px) {
     .row {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column nowrap;
 
         //flex: 1 1 auto;
    
@@ -240,5 +245,30 @@ nav {
     article {
         flex: 1 0 100%;
         background: orange;
+    }
+
+    .img-article {
+    	flex-flow: column nowrap;
+    	 padding: 0 .25em 0 .25em;
+    }
+    img {
+    	max-width: 100%;
+    	margin-left:  0;
+    	margin-right:  0;
+    }
+    figure, picture {
+    	padding: 0;
+    }
+    figure {
+    	width: 100%;
+   position: relative;
+   margin: 0 auto;
+
+    	 
+    }
+    img {width: inherit;}
+
+    .two {
+    	order: 3;
     }
 }
