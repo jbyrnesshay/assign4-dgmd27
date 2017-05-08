@@ -30,7 +30,7 @@ body#mondrian {
     background: black;
 }
 
-body#flexbox {
+body#flexbox, body#cssgrid {
     position: relative;
     width: 100%;
     background: $background-heading;
@@ -40,7 +40,7 @@ body#flexbox {
 
     //background: blue;
     margin: 0 auto;
-    background:white;
+    //background:white;
 }
 
 .wrapper {
@@ -358,49 +358,71 @@ article {
 
 }
 
+
+
+
+
 /* cssgrid page */
 #cssgrid {
-	.wrapper {
+	
+	ul {
+		grid-column: 1/4;
+		display:flex;
+		flex: row nowrap;
+	}
+	li {
+		flex-basis: 25%;
+		
+	}
+	#maincontent {
 		display:grid;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 25em 25em 25em 25em 25em;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
 	}
+	 
 	nav {
-		grid-row:2/3;
-		grid-column: 1/5; 
+		//grid-row:1/4;
+		display:grid;
+		grid-template-columns: 25em 25em 25em 25em 25em 25em 25em 25em 25em;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		 
+			}
+	ul li {
+		 
 	}
 
    header {
-   	grid-row: 1/2;
-   	grid-column: 1/5;
+   	 
    }
+   h2 {
 
-   .one {
-   	grid-row: 3/4;
-   	grid-column: 1/5;
+   }
+   .one  {
+   	grid-row: 1/2;
+   	grid-column: 1/11;
    }
 
    .two {
-   	grid-row: 4/5;
-   	grid-column: 1/3;
+   	grid-row: 2/3;
+   	grid-column: 1/5;
    }
 
    .three {
-   	grid-row: 4/5;
-   	grid-column: 3/5;
+   	grid-row: 2/3;
+   	grid-column: 5/11;
    }
 
    .four {
-   	grid-row: 5/6;
-   	grid-column: 1/3;
+   	grid-row: 3/4;
+   	grid-column: 1/4;
 
    }
    .five {
-   	grid-row: 6/7;
-   	grid-column: 3/5;   }
+   	grid-row: 3/4;
+   	grid-column: 5/11;   }
 
    	.row {
-   		grid-row: 1/6;
+   		grid-row: 1/11;
    	}
 }

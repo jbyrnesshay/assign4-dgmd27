@@ -1,66 +1,82 @@
 @media only screen and (min-width: 480px) and (max-width: 700px) {
+  /* line 3, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper {
     grid-template-columns: 122px 75px 225px 290px 71px 290px;
     grid-template-rows: 25px 125px 225px 96px 275px 53px 17px;
     background: green;
   }
+  /* line 7, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .m {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     padding-left: 30%;
     background: black;
   }
+  /* line 13, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .l {
     grid-row: 1 / 2;
     grid-column: 3 / 5;
     padding-left: 34%;
   }
+  /* line 18, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .k {
     grid-row: 2 / 3;
     grid-column: 4 / 5;
   }
+  /* line 23, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .j {
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     background: black;
   }
+  /* line 30, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .i {
     grid-row: 2 / 4;
     grid-column: 2 / 4;
   }
+  /* line 34, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .h {
     grid-row: 3/ 4;
     grid-column: 4 / 5;
   }
+  /* line 38, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .g {
     grid-row: 1/ 4;
     grid-column: 5 / 6;
   }
+  /* line 42, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .f {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
     background: blue;
   }
+  /* line 47, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .e {
     grid-row: 4 / 5;
     grid-column: 1 / 2;
   }
+  /* line 51, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .d {
     grid-row: 5 / 7;
     grid-column: 1 / 2;
     background: yellow;
   }
+  /* line 56, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .c {
     grid-row: 4 / 8;
     grid-column: 2 / 4;
   }
+  /* line 61, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .b {
     grid-row: 4 / 7;
     grid-column: 4 / 6;
   }
+  /* line 65, C:/Users/winescape-xx/Desktop/assign4/sass/media.scss */
   .wrapper .a {
     grid-row: 7 / 8;
     grid-column: 4 / 6;
     background: red;
   }
 }
+
+/*# sourceMappingURL=../css/media.map */

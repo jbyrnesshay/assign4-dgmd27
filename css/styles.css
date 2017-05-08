@@ -1,19 +1,23 @@
 /* border box everything in the universe, and what comes before and after, by Paul Irish 
 http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 @import url("https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i,900,900i|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Cedarville Cursive|Fredericka+the+Great|IM+Fell+English|Open+Sans");
+/* line 21, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 html {
   box-sizing: border-box;
 }
 
+/* line 25, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+/* line 29, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 body#mondrian {
   background: black;
 }
 
-body#flexbox {
+/* line 33, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+body#flexbox, body#cssgrid {
   position: relative;
   width: 100%;
   background: #f3e2c9;
@@ -21,15 +25,16 @@ body#flexbox {
   left: 0;
   bottom: 0;
   margin: 0 auto;
-  background: white;
 }
 
+/* line 46, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .wrapper {
   width: 80%;
   margin: 0 auto;
 }
 
 /* this is setting up the transparent background image in the header */
+/* line 56, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 header {
   height: 10em;
   width: 100%;
@@ -40,6 +45,7 @@ header {
   overflow: hidden;
 }
 
+/* line 66, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 header:after {
   width: 100%;
   height: 100%;
@@ -55,25 +61,30 @@ header:after {
   background-size: cover;
 }
 
+/* line 81, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 h2, h3, h4, h5, h6 {
   font-family: 'Josefin Sans';
   flex: 1 1 100%;
 }
 
+/* line 86, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 h2 {
   font-family: 'Cedarville Cursive';
 }
 
+/* line 89, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 h1 {
   font-family: "Alegreya";
   color: #5e2424;
 }
 
+/* line 93, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 h1 span {
   font-size: 3em;
   text-transform: uppercase;
 }
 
+/* line 98, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 nav li a {
   text-decoration: none;
   width: 100%;
@@ -83,30 +94,36 @@ nav li a {
   text-align: center;
 }
 
+/* line 106, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 li a {
   background: #ebf1ff;
 }
 
+/* line 110, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 li a:hover {
   background: #00e6ff;
 }
 
+/* line 118, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 h2, h3 {
   background: #f3e2c9;
   margin-left: 1em;
   margin-right: 1em;
 }
 
+/* line 124, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 nav {
   background: #1f4693;
 }
 
+/* line 128, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .headertext {
   font-weight: bolder;
   font-family: "Fredericka the Great";
   color: #5e2424;
 }
 
+/* line 135, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 nav ul {
   margin-top: 0;
   margin-left: 0;
@@ -115,6 +132,7 @@ nav ul {
   margin-bottom: 0;
 }
 
+/* line 147, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 nav ul li:first-of-type {
   border-top: 2px solid black;
   border-right: 1px solid black;
@@ -123,6 +141,7 @@ nav ul li:first-of-type {
   border-style: solid;
 }
 
+/* line 151, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 nav ul li {
   padding: 0;
   margin: 0;
@@ -134,6 +153,7 @@ nav ul li {
   border-style: solid;
 }
 
+/* line 168, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 article {
   background: #f9f1f1;
   background: #f5f1eb;
@@ -141,11 +161,13 @@ article {
   padding: 0 1em 0 1em;
 }
 
+/* line 192, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .img-article {
   margin-bottom: .5em;
   padding: 0 1em 0 1em;
 }
 
+/* line 204, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .aarticle {
   margin-bottom: .5em;
   padding: 0 1em 0 1em;
@@ -155,6 +177,7 @@ article {
    margin-left: 2em;
 }*/
 /*nested styles for flexbox page start here */
+/* line 226, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox {
   /* adjusts the size of first letter in h1.  I had already set up a span to uppercase it and float it,  so I stuckc with it */
   /*article:nth-of-type(even) {
@@ -162,11 +185,13 @@ article {
 }*/
 }
 
+/* line 228, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .headertext {
   align-self: flex-start;
   flex: 0 0 50%;
 }
 
+/* line 235, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .flex {
   display: flex;
   flex-flow: row nowrap;
@@ -174,45 +199,54 @@ article {
   justify-content: space-between;
 }
 
+/* line 246, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox nav ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
 
+/* line 260, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox nav ul li {
   flex-basis: 10%;
 }
 
+/* line 271, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox article {
   flex: 0 1 49%;
   flex-flow: column nowrap;
 }
 
+/* line 280, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .one {
   flex: 1 1 50%;
   flex-row: row nowrap;
 }
 
+/* line 284, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .col-2 {
   flex: 0 1 66%;
 }
 
+/* line 287, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .col-1 {
   flex: 0 1 32%;
 }
 
+/* line 290, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .img-article {
   flex: 0 1 40%;
   flex-row: column nowrap;
   display: flex;
 }
 
+/* line 300, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .aarticle {
   flex: 0 1 48%;
   display: flex;
 }
 
+/* line 312, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .row {
   display: flex;
   flex-flow: row nowrap;
@@ -221,90 +255,116 @@ article {
 }
 
 @media screen and (max-width: 699px) {
+  /* line 320, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox .row {
     display: flex;
     flex-flow: column nowrap;
   }
+  /* line 328, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox article {
     flex: 1 0 100%;
     background: orange;
   }
+  /* line 333, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox .img-article {
     flex-flow: column nowrap;
     padding: 0 .25em 0 .25em;
   }
+  /* line 337, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox img {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
+  /* line 342, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox figure, #flexbox picture {
     padding: 0;
   }
+  /* line 345, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox figure {
     width: 100%;
     position: relative;
     margin: 0 auto;
   }
+  /* line 352, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox img {
     width: inherit;
   }
+  /* line 354, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox .two {
     order: 3;
   }
 }
 
 /* cssgrid page */
-#cssgrid .wrapper {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+/* line 368, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+#cssgrid ul {
+  grid-column: 1/4;
+  display: flex;
+  flex: row nowrap;
 }
 
+/* line 373, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+#cssgrid li {
+  flex-basis: 25%;
+}
+
+/* line 377, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+#cssgrid #maincontent {
+  display: grid;
+  grid-template-rows: 25em 25em 25em 25em 25em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* line 384, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid nav {
+  display: grid;
+  grid-template-columns: 25em 25em 25em 25em 25em 25em 25em 25em 25em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* line 401, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+#cssgrid .one {
+  grid-row: 1/2;
+  grid-column: 1/11;
+}
+
+/* line 406, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+#cssgrid .two {
   grid-row: 2/3;
   grid-column: 1/5;
 }
 
-#cssgrid header {
-  grid-row: 1/2;
-  grid-column: 1/5;
-}
-
-#cssgrid .one {
-  grid-row: 3/4;
-  grid-column: 1/5;
-}
-
-#cssgrid .two {
-  grid-row: 4/5;
-  grid-column: 1/3;
-}
-
+/* line 411, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .three {
-  grid-row: 4/5;
-  grid-column: 3/5;
+  grid-row: 2/3;
+  grid-column: 5/11;
 }
 
+/* line 416, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .four {
-  grid-row: 5/6;
-  grid-column: 1/3;
+  grid-row: 3/4;
+  grid-column: 1/4;
 }
 
+/* line 421, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .five {
-  grid-row: 6/7;
-  grid-column: 3/5;
+  grid-row: 3/4;
+  grid-column: 5/11;
 }
 
+/* line 425, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .row {
-  grid-row: 1/6;
+  grid-row: 1/11;
 }
 
 /* animation */
+/* line 8, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.css */
 #svg {
   margin-top: 20%;
 }
 
+/* line 11, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.css */
 svg {
   height: 100%;
   width: 100%;
@@ -314,6 +374,7 @@ svg {
   transition: transform 1s;
 }
 
+/* line 20, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.css */
 #block {
   /*animation:  moving 10s linear infinite, rotation 2s linear infinite;*/
   animation-name: moving;
@@ -351,6 +412,7 @@ svg {
 /* 5 columns */
 /* 5 rows*/
 /* transparent background hack: https://css-tricks.com/snippets/css/transparent-background-images/ */
+/* line 6, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .mondrian_wrapper {
   width: 848px;
   height: 900px;
@@ -364,6 +426,7 @@ svg {
   margin: 0 auto;
 }
 
+/* line 20, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .mondrian_wrapper::after {
   content: "";
   background: url(848px-Tableau_I,_by_liet_Mondriaan.png) no-repeat;
@@ -376,6 +439,7 @@ svg {
   z-index: 1;
 }
 
+/* line 33, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 div.mondrian_wrapper div {
   border: 1px solid black;
   background-color: rgba(255, 255, 255, 0.7);
@@ -389,10 +453,12 @@ div.mondrian_wrapper div {
   font-weight: bolder;
 }
 
+/* line 48, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .a, .d, .h, .m {
   color: white;
 }
 
+/* line 51, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .a, .l, .m {
   font-size: 1.4em;
   top: 0;
@@ -400,10 +466,12 @@ div.mondrian_wrapper div {
   padding-top: 0;
 }
 
+/* line 58, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .g, .h, .i, .j {
   padding-top: 1.4em;
 }
 
+/* line 61, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .a {
   grid-row: 1 / 2;
   grid-column: 1 / 3;
@@ -411,65 +479,77 @@ div.mondrian_wrapper div {
   background: red;
 }
 
+/* line 67, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .b {
   grid-row: 2 / 5;
   grid-column: 1 / 3;
   padding-left: 34%;
 }
 
+/* line 72, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .c {
   grid-row: 1 / 5;
   grid-column: 3 / 5;
 }
 
+/* line 77, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .d {
   grid-row: 1 / 3;
   grid-column: 5 / 6;
   background: black;
 }
 
+/* line 84, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .e {
   grid-row: 3 / 4;
   grid-column: 5 / 6;
 }
 
+/* line 88, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .f {
   grid-row: 4/ 5;
   grid-column: 5 / 6;
 }
 
+/* line 92, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .g {
   grid-row: 5/ 8;
   grid-column: 1 / 2;
 }
 
+/* line 96, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .h {
   grid-row: 5 / 6;
   grid-column: 2 / 3;
   background: blue;
 }
 
+/* line 101, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .i {
   grid-row: 5 / 7;
   grid-column: 3 / 5;
 }
 
+/* line 105, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .j {
   grid-row: 5 / 8;
   grid-column: 5 / 6;
   background: yellow;
 }
 
+/* line 110, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .k {
   grid-row: 6 / 7;
   grid-column: 2 / 3;
 }
 
+/* line 115, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .l {
   grid-row: 7 / 8;
   grid-column: 2 / 4;
 }
 
+/* line 119, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_mondrian.scss */
 .m {
   grid-row: 7 / 8;
   grid-column: 4 / 5;
@@ -477,77 +557,95 @@ div.mondrian_wrapper div {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1025px) {
+  /* line 9, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .mondrian_wrapper {
     transform: rotate(180deg);
   }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 700px) {
+  /* line 17, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .mondrian_wrapper {
     grid-template-columns: 122px 75px 225px 290px 71px 290px;
     grid-template-rows: 25px 125px 225px 96px 275px 53px 17px;
   }
+  /* line 22, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .mondrian_wrapper div {
     transform: rotate(180deg);
   }
+  /* line 26, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .m {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     padding-left: 30%;
     background: black;
   }
+  /* line 32, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .l {
     grid-row: 1 / 2;
     grid-column: 3 / 5;
     padding-left: 34%;
   }
+  /* line 37, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .k {
     grid-row: 2 / 3;
     grid-column: 4 / 5;
   }
+  /* line 42, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .j {
     grid-row: 1 / 4;
     grid-column: 1 / 2;
     background: yellow;
     background: green;
   }
+  /* line 50, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .i {
     grid-row: 2 / 4;
     grid-column: 2 / 4;
   }
+  /* line 54, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .h {
     grid-row: 3/ 4;
     grid-column: 4 / 5;
     background: blue;
   }
+  /* line 59, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .g {
     grid-row: 1/ 4;
     grid-column: 5 / 6;
   }
+  /* line 63, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .f {
     grid-row: 4 / 5;
     grid-column: 1 / 2;
   }
+  /* line 68, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .e {
     grid-row: 5 / 6;
     grid-column: 1 / 2;
   }
+  /* line 72, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .d {
     grid-row: 6 / 8;
     grid-column: 1 / 2;
     background: black;
   }
+  /* line 77, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .c {
     grid-row: 4 / 8;
     grid-column: 2 / 4;
   }
+  /* line 82, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .b {
     grid-row: 4 / 7;
     grid-column: 4 / 6;
   }
+  /* line 86, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_media.scss */
   .a {
     grid-row: 7 / 8;
     grid-column: 4 / 6;
     background: red;
   }
 }
+
+/*# sourceMappingURL=../css/styles.map */
