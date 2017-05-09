@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Document</title>
-		 
+		
 		<link href="css/svg.css" rel="stylesheet">
 		<script src="scripts.js"></script>
 	</head>
@@ -18,75 +18,133 @@
 			</nav>
 		</header>
 		<div id="maincontent">
-
-		<!--<object type="image/svg+xml" id='caterpillar' data="noun_1026147_cc.svg">
-		</object>
-		<object type="image/svg+xml" id="pig" data="pig_noun_1021476_cc.svg">
-		</object>
-
-		<object type="image/svg+xml" id='butterfly' data="noun_1026142_cc.svg">
-		</object>	 
-		-->
-
-		<svg>
-		<!--<ellipse id="ellipse" cx="50" cy="50" rx="50" ry="50" x="200px" y="200px" >-->
-		<g id="ellipse">
-		<rect class="obj" rx="0" ry="100" width="4em" height="4em">
-
-		<!-- the below animate works with non-zero values of ry set in rect above -->
-		 <animate attributeName="rx" from="0" to="50"
-        dur="3s" repeatCount="indefinite"></animate>
-		<style>
-
-		@keyframes moving {
-			0% {transform: translate(0px, 0px) rotate(0deg); fill: blue;}
-
-			30% {transform: translate(400px, 0px) rotate(270deg); fill: yellow;}
+			<!--<object type="image/svg+xml" id='caterpillar' data="noun_1026147_cc.svg">
+			</object>
+			<object type="image/svg+xml" id="pig" data="pig_noun_1021476_cc.svg">
+			</object>
+			<object type="image/svg+xml" id='butterfly' data="noun_1026142_cc.svg">
+				</object>
+			-->
+			<svg x="0px" y="0px"
+				viewBox="0 0 1500 1500" style="enable-background:new 0 0 174 177;" xml:space="preserve">
+				<style type="text/css">
+					.st0{fill:lightblue;stroke:#231F20;stroke-linecap:round;stroke-miterlimit:10;}
+					.st1{fill:grey;stroke:#000000;stroke-miterlimit:10;}
+					.st0, .st1 {
+						transform:   translate(0px, 0px);
+						/*transform: scale(.2);*/
+					}
+				</style>
+				<g id="group">
+					<g id="Layer_1">
+						<g id="circle">
+							<circle class="st0" cx="100" cy="100" r="100"/>
+						</g>
+						<path class="st0" d="M56.5-197.5"/>
+						<path class="st0" d="M131.4,21c-1.9,29.5-20.9,38.5,0.1,29.5s21-9,21-9"/>
+						<path class="st0" d="M-524.5-107.5"/>
+					</g>
+					<g id="Layer_2">
+						<path class="st1" d="M50,21c58.5,41.5,82.5,37.5,23.5,39.5S6.7,95,6.7,95"/>
+						<path class="st1" d="M-201.5-32.5"/>
+						<path class="st1" d="M164.5,100.5c-67,32,28,33-50,23S32,148,32,148"/>
+						<path class="st1" d="M73.5,132.5"/>
+						<path class="st1" d="M-176.5-194.5"/>
+					</g>
+				</g>
+				<style>
+				/*@keyframes moving {
+					0% {transform: translate(0px, 0px) rotate(0deg); fill: blue;}
+					30% {transform: translate(400px, 0px) rotate(270deg); fill: yellow;}
+					
+					/*55% {transform: rotate(40deg)}*/
+					/*60% {transform: translate(900px, 200px) rotate(540deg); fill: green;}
+					/*70% {transform: rotate(170deg)}*/
+					/*90% {transform: translate(200px, 100px) rotate(810deg); fill: purple;}
+					100% {transform: translate(0px, 0px) rotate(360deg); fill: blue;}
+					
+				}*/
+				#group  {
+				
+				/*animation:  moving 10s linear infinite, rotation 2s linear infinite;*/
+				animation-name:  rotation;
+				animation-duration:  2s, 2s;
+				animation-timing-function:  linear;
+				animation-iteration-count:  infinite, infinite;
+				transform-origin: 100px 100px;
+				
+				
+				}
+				/*#ellipse  {
+				
+				
+				animation-name:  moving;
+				animation-duration:  10s, 2s;
+				animation-timing-function:  linear;
+				animation-iteration-count:  infinite, infinite;
+				transform-origin: 50% 50%;
+				
+				
+				}*/
+				/*animation:  moving 10s linear infinite, rotation 2s linear infinite;*/
+				@keyframes rotation {
+					from {transform: rotate(0deg);}
+					to {transform: rotate(359deg);}
+				}
+				
+				
+				</style>
+			</svg>
+			<!--<svg>-->
+			<!--<ellipse id="ellipse" cx="50" cy="50" rx="50" ry="50" x="200px" y="200px" >-->
+			<!--<g id="ellipse">
+						<rect class="obj" rx="0" ry="100" width="4em" height="4em">
+				<!-- the below animate works with non-zero values of ry set in rect above -->
+				<!--	<animate attributeName="rx" from="0" to="50"
+				dur="3s" repeatCount="indefinite"></animate>
+				<style>
+				@keyframes moving {
+					0% {transform: translate(0px, 0px) rotate(0deg); fill: blue;}
+					30% {transform: translate(400px, 0px) rotate(270deg); fill: yellow;}
+					
+					/*55% {transform: rotate(40deg)}*/
+					60% {transform: translate(900px, 200px) rotate(540deg); fill: green;}
+					/*70% {transform: rotate(170deg)}*/
+					90% {transform: translate(200px, 100px) rotate(810deg); fill: purple;}
+					100% {transform: translate(0px, 0px) rotate(360deg); fill: blue;}
+					
+				}
+				#ellipse  {
+				
+				/*animation:  moving 10s linear infinite, rotation 2s linear infinite;*/
+				animation-name:  moving;
+				animation-duration:  10s, 2s;
+				animation-timing-function:  linear;
+				animation-iteration-count:  infinite, infinite;
+				transform-origin: 50% 50%;
+				
+				
+				}
+				@keyframes rotation {
+					from {transform: rotate(0deg);}
+					to {transform: rotate(359deg);}
+				}
+				
+				
+				</style>
+				
+				
+				</rect>
+				<text x="0" y="50" class="obj" font-family="Verdana" font-size="35" fill="blue">Hello</text>
+			</g>
+			<script> var tettt = document.getElementById("ellipse");
+					//tettt.setAttribute("rx", 100);
 			
-			/*55% {transform: rotate(40deg)}*/
-			60% {transform: translate(900px, 200px) rotate(540deg); fill: green;}
-			/*70% {transform: rotate(170deg)}*/
-			90% {transform: translate(200px, 100px) rotate(810deg); fill: purple;}
-			100% {transform: translate(0px, 0px) rotate(360deg); fill: blue;}
-
-			 
-
-		}
- #ellipse  {
-	   	
-	   	/*animation:  moving 10s linear infinite, rotation 2s linear infinite;*/
-	   	animation-name:  moving;
-	   	animation-duration:  10s, 2s;
-	   	animation-timing-function:  linear;
-	   	animation-iteration-count:  infinite, infinite;
-	   	transform-origin: 50% 50%;
-
-	   
-	   	
-	   }
-		@keyframes rotation {
-			from {transform: rotate(0deg);}
-			to {transform: rotate(359deg);}
-
-		}
- 
-	  
-		</style>
-		
-		 
-
-		 </rect>
-		<text x="0" y="50" class="obj" font-family="Verdana" font-size="35" fill="blue">Hello</text>
-		 </g>
-		  <script> var tettt = document.getElementById("ellipse");
-				//tettt.setAttribute("rx", 100);
- 
- tettt.style.border = "1px solid black";
-</script>
-		</svg>
-
-		</div>
-		<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-		</script>
-	</body>
+			tettt.style.border = "1px solid black";
+			</script>
+		</svg>-->
+	</div>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+	</script>
+</body>
 </html>
