@@ -1,0 +1,63 @@
+
+
+
+		
+		@keyframes fadeOut {
+			0% {
+				opacity: 1;
+				visibility:visible;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+				visibility:visible;
+			}
+		}
+
+@mixin move_svg($move, $delay) {
+			@keyframes rotation-move {
+				0% {
+					transform: translate(0px, 0px);
+				}
+				100% {
+					transform: translate($move, 0px);
+				}
+			}
+			animation-name:  rotation-move;
+			animation-duration:  2s, 2s;
+			animation-timing-function:  linear;
+			animation-iteration-count:  infinite, infinite;
+			animation-iteration-count:1;
+			transform-origin: 537.1px 473.1px;
+			//transition: translate 4s;
+			animation-fill-mode:forwards;
+			animation-delay: $delay;
+		
+		}
+
+@mixin letter_appear($delay) {
+		
+			animation: 2s fadeIn;
+			animation-fill-mode:forwards;
+			animation-delay: $delay;
+
+		}
+ 
+	@mixin globe_appear($delay) {
+			
+		animation: 2s fadeIn;
+		animation-fill-mode:forwards;
+		opacity: 0;
+		transform-origin: 537.1px 473.1px;
+		transition: translate 4s;
+	    transform: translate(0px, 0px);
+	    animation-delay:$delay;
+		}

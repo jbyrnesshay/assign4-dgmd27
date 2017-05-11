@@ -1,0 +1,306 @@
+
+.base{fill:#4e4e43;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+		.text1{font-family:'Arial-BoldMT';}
+		.text2{font-size:5px;}
+		.st3{display:none;fill:#E6E7E8;stroke:#231F20;stroke-linecap:round;stroke-miterlimit:10;}
+		.terrain{fill:#0af20f;stroke:#231F20;stroke-miterlimit:1;}
+		.globe{fill: #c3e6fc;}
+		
+		text {
+		z-index:50;
+		}
+		circle {
+		z-index: 1;
+		}
+		#Layer_3 {
+		z-index:0;
+		}
+		@keyframes rotation {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(359deg);}
+		}
+
+ 
+		#svg_all {
+		transform: scale(.1);
+		}
+		 
+
+		@keyframes disappear {
+		0% {opacity:1;}
+		100% {opacity:0;}
+		}
+
+		.terrain {
+		animation: 2s fadeOut;
+		animation-fill-mode: forwards;
+		animation-delay: 2s;
+		}
+		@keyframes fadeOut {
+		0% {
+		opacity: 1;
+		visibility:visible;
+		}
+		100% {
+
+		opacity: 0;
+		}
+		}
+		.T1 {
+		font-size: 50em;
+		opacity: 0;
+		}
+		@keyframes fadeIn {
+		0% {
+		opacity: 0;
+		}
+		100% {
+		opacity: 1;
+		}
+		}
+
+ 
+	 
+		.T1, .i, .b, .e, .t {
+			font-size: 50em;
+			opacity: 0;
+		}
+
+		 
+
+		#maincontent, nav {
+			z-index: -1;
+			position:absolute;
+		} 
+
+ 
+@keyframes rotation {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(359deg);}
+		}
+
+
+		
+		@keyframes fadeOut {
+			0% {
+				opacity: 1;
+				visibility:visible;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+				visibility:visible;
+				 
+			}
+		}
+
+		@keyframes fadeIn2 {
+			 from {
+			 	opacity: 0;
+			 }
+		 	to {
+				opacity: 1;
+				visibility:visible;
+		 }
+		}
+@mixin move2_svg($move, $delay) {
+	position: absolute;
+		@keyframes tryit {
+			0% {
+				opacity: 1;
+				transform: translate(0px, 0px);
+			}
+			25% {
+				opacity: 1;
+				visibility: visible;
+			}
+			50% {
+				transform: translate(0px, 0px);
+			}
+			100% {
+				padding-left: $move;
+				//transform: translate($move, 0px);
+			}
+		}
+
+		animation-name: tryit 6s;
+		//animation-iteration-count: infinite, infinite;
+		animation-timing-function: linear;
+		animation-fill-mode:forwards;
+		animation-delay: $delay;
+		//transition: transform 9s;
+		transition: padding-left 2s;
+	}
+	 
+@mixin move_svg($move, $delay) {
+	 
+	
+	
+			@keyframes rotationmove {
+				0% {
+					transform: translate(0px, 0px);
+					
+				}
+				100% {
+					transform: translate($move, 0px);
+				
+			}
+		}
+			animation:  rotationmove 2s;
+			animation-duration:  2s, 2s;
+			animation-timing-function:  linear;
+			animation-iteration-count:  infinite, infinite;
+			animation-iteration-count:1;
+			transform-origin: 537.1px 473.1px;
+			//transition: padding-left 4s;
+			
+			animation-delay: $delay;
+			transition: translate 4s;
+		animation-fill-mode:forwards;
+		}
+
+@mixin letter_appear($delay) {
+		   //opacity: 1;
+			animation: 2s fadeIn2;
+			animation-fill-mode:forwards;
+			animation-delay: $delay;
+
+		}
+ 
+	@mixin globe_appear($delay) {
+		 
+		animation: 2s fadeIn;
+		animation-fill-mode:forwards;
+		//opacity: 1;
+		transform-origin: 537.1px 473.1px;
+		transition: translate 4s;
+	    transform: translate(0px, 0px);
+	    animation-delay:$delay;
+ 
+		}
+	
+
+ 
+
+ #group2, #group3, #group4, #group5 {
+   	opacity:0;
+   }
+		//$thing: 4s;
+		[id*='group'] {
+			//@include globe_appear(0s);
+			transform-origin: 537.1px 473.1px;
+		}
+		.T1 {
+			@include letter_appear(2s);
+		}
+
+		#group1 {
+		 display:block;
+		@include move_svg(200em, 2s);
+	}
+		#group1{
+			
+		}
+		#group2 {
+			 
+			@include globe_appear(7s);
+			
+			
+		}
+
+		#move2 {
+			//position:absolute;
+			@include move_svg(40em, 10s);
+		}
+
+		.i {
+			@include letter_appear(8s);
+		}
+		//#group2 
+			//@include move_svg(150em, 10s);
+		
+		/*
+		#group3 {
+			@include globe_appear(6s);
+		}
+		#group4 {
+			@include globe_appear(8s);
+		}
+		#group5 {
+			@include globe_appear(10s);
+		}
+
+		 */
+		 
+		
+		
+		/*
+		.b {
+		@include letter_appear(8s);
+		}
+		.e {
+	@include letter_appear(10s);
+
+		}
+		.t {
+		@include letter_appear(12s);
+		}
+		  
+
+
+		
+		#group3 {
+		@include move_svg(150em, 8s);
+		}
+		#group4 {
+		@include move_svg(200em, 10s);
+		}
+		#group5 {
+		@include move_svg(250em, 12s);
+		}
+
+		 
+		/*#group2, #group3, #group4, #group5 {
+		animation: 2s fadeIn;
+		animation-fill-mode:forwards;
+		opacity: 0;
+		transform-origin: 537.1px 473.1px;
+		transition: translate 4s;
+	    transform: translate(0px, 0px);
+		
+		}*/
+	 
+		
+		//@mixin letter_move 
+
+		
+ 
+			@keyframes rotation {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(359deg);}
+		}
+
+ 
+		
+		@keyframes disappear {
+			0% {opacity:1;}
+			100% {opacity:0;}
+		}
+
+
+		object {
+	 
+position:absolute;
+			left: 0;
+			top:0;
+			width: 200em;
+			z-index: 500;
+		}
