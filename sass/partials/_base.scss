@@ -372,12 +372,17 @@ p {
   margin: 0;
   padding: .5em;
 
+
 }
 h3 {
+
   margin: 0;
 }
 }
 
+#sidebar #radius {
+  border-radius: 7px;
+}
 article {
     
      flex: 0 1 49%;
