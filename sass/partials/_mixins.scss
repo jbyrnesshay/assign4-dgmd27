@@ -1,5 +1,10 @@
 
 
+ @keyframes rotation {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(359deg);}
+		}
+
 
 		
 		@keyframes fadeOut {
@@ -18,33 +23,58 @@
 			}
 			100% {
 				opacity: 1;
-				visibility:visible;
+				//visibility:visible;
+				 
 			}
 		}
 
-@mixin move_svg($move, $delay) {
-			@keyframes rotation-move {
+		@keyframes fadeIn2 {
+			 from {
+			 	opacity: 0;
+			 }
+		 	to {
+				opacity: 1;
+				//visibility:visible;
+		 }
+		}
+
+
+@mixin moving($name, $distance, $time) {
+	$keyframe_prefix: "motion";
+		@keyframes #{$keyframe_prefix+$name} {
 				0% {
 					transform: translate(0px, 0px);
+					
+				}
+				25% {
+					transform: scale(1.2);
+				}
+				50% {
+					transform: scale(1);
+				}
+				75% {
+					transform: translateY(10px);
 				}
 				100% {
-					transform: translate($move, 0px);
-				}
+					transform: translate(#{$distance}, 0px);
+				
 			}
-			animation-name:  rotation-move;
+		}
+		animation:  #{$keyframe_prefix+$name} 2s;
 			animation-duration:  2s, 2s;
 			animation-timing-function:  linear;
 			animation-iteration-count:  infinite, infinite;
 			animation-iteration-count:1;
 			transform-origin: 537.1px 473.1px;
-			//transition: translate 4s;
+			//transition: padding-left 4s;
 			animation-fill-mode:forwards;
-			animation-delay: $delay;
+			animation-delay: #{$time};
+
+	}
 		
-		}
 
 @mixin letter_appear($delay) {
-		
+		   //opacity: 1;
 			animation: 2s fadeIn;
 			animation-fill-mode:forwards;
 			animation-delay: $delay;
@@ -52,12 +82,15 @@
 		}
  
 	@mixin globe_appear($delay) {
-			
-		animation: 2s fadeIn;
+		 
+		animation: 2s fadeIn2;
 		animation-fill-mode:forwards;
-		opacity: 0;
+		//opacity: 1;
 		transform-origin: 537.1px 473.1px;
 		transition: translate 4s;
 	    transform: translate(0px, 0px);
 	    animation-delay:$delay;
+	    animation-duration: 3s;
+ 
 		}
+	

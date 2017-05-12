@@ -1,7 +1,9 @@
 
 @import "partials/_color-variables.scss";
+@import "partials/mixins";
 @import "partials/base";
-@import "partials/svgback";
+@import "partials/svgcss";
+@import "partials/animsequence";
 @import "partials/mondrian";
 
 @import "partials/media";

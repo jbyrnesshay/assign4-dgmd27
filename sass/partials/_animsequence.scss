@@ -1,0 +1,61 @@
+
+
+/*first letter */
+#group1 {
+	display:block;
+	@include moving(1, 100em, 2s);
+}
+/*second letter */
+#group2 {
+	@include globe_appear(4s);
+	}
+.i {
+	@include letter_appear(5s);
+}
+#move2 {
+	display:block;
+	@include moving(2, 150em, 6s);
+}
+
+/*third letter */
+#group3 {
+	@include globe_appear(7s);
+
+	
+
+}
+.b {
+	@include letter_appear(8s);
+}
+#move3 {
+	@include moving(3, 200em, 9s);
+}
+
+
+
+
+
+/*fourth letter */
+#group4 {
+	@include globe_appear(10s);
+}
+.e {
+	@include letter_appear(11s);
+}
+#move4 {
+	@include moving(4, 250em, 12s);
+}
+
+
+
+/*fifth letter */
+#group5 {
+	@include globe_appear(13s);
+}
+.t {
+	@include letter_appear(14s);
+}
+#move5 {
+	@include moving(5, 300em, 15s);
+}
+

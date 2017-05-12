@@ -1,0 +1,144 @@
+
+
+
+ .base{fill:#4e4e43;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+		.text1{font-family:'Arial-BoldMT';}
+		.text2{font-size:5px;}
+		.st3{display:none;fill:#E6E7E8;stroke:#231F20;stroke-linecap:round;stroke-miterlimit:10;}
+		.terrain{fill:#0af20f;stroke:#231F20;stroke-miterlimit:1;}
+		.globe{fill: #c3e6fc;}
+		text {
+		
+		}
+		circle {
+			z-index: 1;
+		}
+		#Layer_3 {
+			//z-index:0;
+		}
+		#svg_all {
+			transform: scale(.1);
+			//position: absolute;
+			//left:  -10em;
+			//display:inline-block;
+		}
+		.T1, .i, .b, .e, .t {
+			font-size: 50em;
+			opacity: 0;
+
+		}
+
+		object {
+			//display:block;
+	 		//position:absolute;
+			//left: 0;
+			//top:0;
+			//right: 0;
+			//width: 100%;
+			//z-index: 500;
+		}
+
+		#maincontent, nav {
+			//z-index: -1;
+			//position:absolute;
+		} 
+		.terrain {
+			animation: 2s fadeOut;
+			animation-fill-mode: forwards;
+			animation-delay: 2s;
+		}
+
+ 		#group2, #group3, #group4, #group5 {
+   			opacity:0;
+   		}
+		
+		[id*='group'] {
+			//@include globe_appear(0s);
+			transform-origin: 537.1px 473.1px;
+		}
+		.T1 {
+			@include letter_appear(2s);
+		}
+		 
+
+		
+		//#group2 
+			//@include move_svg(150em, 10s);
+		
+		/*
+		#group3 {
+			@include globe_appear(6s);
+		}
+		#group4 {
+			@include globe_appear(8s);
+		}
+		#group5 {
+			@include globe_appear(10s);
+		}
+
+		 */
+		 
+		
+		
+		/*
+		.b {
+		@include letter_appear(8s);
+		}
+		.e {
+	@include letter_appear(10s);
+
+		}
+		.t {
+		@include letter_appear(12s);
+		}
+		  
+
+
+		
+		#group3 {
+		@include move_svg(150em, 8s);
+		}
+		#group4 {
+		@include move_svg(200em, 10s);
+		}
+		#group5 {
+		@include move_svg(250em, 12s);
+		}
+
+		 
+		/*#group2, #group3, #group4, #group5 {
+		animation: 2s fadeIn;
+		animation-fill-mode:forwards;
+		opacity: 0;
+		transform-origin: 537.1px 473.1px;
+		transition: translate 4s;
+	    transform: translate(0px, 0px);
+		
+		}*/
+	 
+		
+		//@mixin letter_move 
+
+		
+.T1, .i, .b, .e, .t {
+		//animation: 2s fadeIn;
+		//animation-fill-mode:forwards;
+		
+		}
+
+		.i, .b, .e, .t {
+		
+		 
+		
+		}
+			/*@keyframes rotation {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(359deg);}
+		}
+
+ 
+		
+		@keyframes disappear {
+			0% {opacity:1;}
+			100% {opacity:0;}
+		}*/
