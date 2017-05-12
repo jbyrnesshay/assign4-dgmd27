@@ -81,6 +81,20 @@ header:after {
     background-position: 50% 50%;
     background-size: cover;
 }
+footer {
+  background: $prime-color;
+  position: relative;
+  text-align: center;
+  padding: .25em;
+}
+
+footer p {
+ // position: absolute;
+  display: inline-block;
+
+  margin: 0 auto;
+  background: $third-color;
+}
 
 h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans';
@@ -123,6 +137,7 @@ h2, h3 {
     background: $background-heading;
     margin-left: 1em;
     margin-right: 1em;
+
 }
 p {
    margin-left: 1em;
@@ -321,20 +336,7 @@ figure {
   margin-right: .5em;
 }
 
-footer {
-  background: $prime-color;
-  position: relative;
-  text-align: center;
-  padding: .25em;
-}
 
-footer p {
- // position: absolute;
-  display: inline-block;
-
-  margin: 0 auto;
-  background: $third-color;
-}
 
 #contentplusside {
   display:flex;
@@ -484,7 +486,10 @@ article {
 
 /* cssgrid page */
 #cssgrid {
-	
+  #inner_wrapper {
+	display: grid;
+  grid-template-columns: 8fr 2fr;
+}
 	ul {
 		grid-column: 1/4;
 		display:flex;
@@ -500,6 +505,7 @@ article {
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-column-gap: 1em;
 		grid-row-gap:.5em;
+    grid-column: 1/2;
 
 	}
 	 
@@ -513,7 +519,15 @@ article {
 	ul li {
 		 
 	}
+figure {
+  margin-left: .5em;
+  padding-right: .5em;
+  padding-right:0;
+}
 
+p {
+   
+}
    header {
    	 
    }
@@ -563,6 +577,43 @@ article {
 			grid-column: 2/3;
 		}
    	 }
+
+     #sidebar {
+ grid-column: 2/3;
+background: gray;
+border-left: 1px solid black;
+h2 {
+margin: 0;
+margin-top: .8em;
+padding: 0;
+margin-bottom: 2em;
+}
+article {
+  background: gray;
+}
+img {
+  border-color: white;
+  margin-bottom: 2em;
+  height: 100%;
+
+}
+
+p {
+  background: $panel-color;
+  margin: 0;
+  padding: .5em;
+
+
+}
+h3 {
+
+  margin: 0;
+}
+}
+
+#sidebar #radius {
+  border-radius: 7px;
+}
 
 
 }
