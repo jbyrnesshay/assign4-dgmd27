@@ -1,0 +1,138 @@
+.base{fill:#4e4e43;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+		.text1{font-family:'Arial-BoldMT';}
+		.text2{font-size:5px;}
+		.st3{display:none;fill:#E6E7E8;stroke:#231F20;stroke-linecap:round;stroke-miterlimit:10;}
+		.terrain{fill:#0af20f;stroke:#231F20;stroke-miterlimit:1;}
+		.globe{fill: #c3e6fc;}
+		text {
+		z-index:50;
+		}
+		circle {
+		z-index: 1;
+		}
+		#Layer_3 {
+		z-index:0;
+		}
+		@keyframes rotation {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(359deg);}
+		}
+
+ 
+		#svg_all {
+		transform: scale(.2);
+		
+		position: absolute;
+		left:  -10em;
+}
+		@keyframes disappear {
+		0% {opacity:1;}
+		100% {opacity:0;}
+		}
+
+		.terrain {
+		animation: 2s fadeOut;
+		animation-fill-mode: forwards;
+		animation-delay: 4s;
+		}
+		@keyframes fadeOut {
+		0% {
+		opacity: 1;
+		visibility:visible;
+		}
+		100% {
+
+		opacity: 0;
+		}
+		}
+		.T1 {
+		font-size: 50em;
+		opacity: 0;
+		}
+		@keyframes fadeIn {
+		0% {
+		opacity: 0;
+		}
+		100% {
+		opacity: 1;
+		}
+		}
+		#group1, #group2  {
+			$x: 500px;
+		animation-name:  rotation-move;
+		animation-duration:  2s, 2s;
+		animation-timing-function:  linear;
+		animation-iteration-count:  infinite, infinite;
+		animation-iteration-count:1;
+		transform-origin: 537.1px 473.1px;
+		transition: translate 4s;
+		
+		animation-fill-mode:forwards;
+
+
+		}
+		#group1 {
+		animation-delay: 10s;
+		}
+		#group2, #group3, #group4, #group5 {
+		animation: 2s fadeIn;
+		animation-fill-mode:forwards;
+		opacity: 0;
+		transform-origin: 537.1px 473.1px;
+		transition: translate 4s;
+	    transform: translate(0px, 0px);
+		
+		}
+		#group2 {
+		animation-delay: 10s;
+		}
+		#group3 {
+		animation-delay:13s;
+		}
+		#group4 {
+		animation-delay:21s
+		}
+		#group5 {
+		animation-delay:25s;
+		}
+	
+		@keyframes rotation-move {
+		0% {
+		transform: translate(0px, 0px);
+
+		}
+		100% {
+		transform: translate($x, 0px);
+		}
+	
+
+
+		}
+		.T1 {
+		animation: 2s fadeIn;
+		animation-fill-mode:forwards;
+		animation-delay: 4s;
+		}
+
+		.i, .b, .e, .t {
+		font-size: 50em;
+		animation: 2s fadeIn;
+		animation-fill-mode:forwards;
+		
+		}
+		.i {
+		animation-delay: 12s;
+		}
+		.b {
+		animation-delay: 15s;
+		}
+		.e {
+		animation-delay: 19s;
+
+		}
+		.t {
+		animation-delay: 23s;
+		}
+		#group2 {
+
+		}

@@ -14,7 +14,9 @@
     border-left: $leftx solid $color;
     border-style: $style;
 }
-
+svg * {
+    //width: 500em;
+}
 /* border box everything in the universe, and what comes before and after, by Paul Irish 
 http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 
@@ -173,6 +175,9 @@ nav ul:hover {
     }
 }
 
+object#object svg {
+   width: 500em;
+}
 
 img {
     transition: border 2s;
@@ -269,19 +274,19 @@ article {
 /*nested styles for flexbox page start here */
 #flexbox {
 
-	.headertext {
+	/*.headertext {
 		align-self: flex-start;
     flex: 0 0 50%;
 	}
-	
-
-
+	*/
+/*
 .flex {
+
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-}
+}*/
 
 /* adjusts the size of first letter in h1.  I had already set up a span to uppercase it and float it,  so I stuckc with it */
 
