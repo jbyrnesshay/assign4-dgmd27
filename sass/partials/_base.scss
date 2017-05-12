@@ -85,7 +85,7 @@ header:after {
 h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans';
 flex: 1 1 100%;
-}
+ }
 
 h2 {
     font-family: 'Cedarville Cursive';
@@ -124,7 +124,11 @@ h2, h3 {
     margin-left: 1em;
     margin-right: 1em;
 }
-
+p {
+   margin-left: 1em;
+    margin-right: 1em;
+    text-align:justify;
+}
 nav {
     background: $prime-color;
 }
@@ -312,17 +316,51 @@ nav ul li {
     flex-basis: 10%;
  
 }
+figure {
+  margin-left: .5em;
+  margin-right: .5em;
+}
 
+footer {
+  background: $prime-color;
+  position: relative;
+  text-align: center;
+  padding: .25em;
+}
 
+footer p {
+ // position: absolute;
+  display: inline-block;
 
+  margin: 0 auto;
+  background: $third-color;
+}
 
+#contentplusside {
+  display:flex;
+   flex-flow: row nowrap;
+   flex: 0 1 auto;
+   background-color: #ccc;
+   justify-content: space-around;
+}
 
-#maincontent {}
+#maincontent {
+flex: 0 0 80%;
+}
+#sidebar {
+flex: 0 0 20%;
+border-left: 1px solid black;
+h2 {
+margin: 0;
+margin-top: .8em;
+padding: 0;
+}
+}
 
 article {
     
      flex: 0 1 49%;
-	 
+	  
    
     flex-flow: column nowrap;
     
