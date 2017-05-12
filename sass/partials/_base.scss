@@ -41,18 +41,12 @@ body#flexbox, body#cssgrid {
     top: 0;
     left: 0;
     bottom: 0;
-
-    //background: blue;
     margin: 0 auto;
-    //background:white;
 }
 
 .wrapper {
-    //position: absolute;
     width: 80%;
     margin: 0 auto;
-
-    //background: green;
 }
 
 /* this is setting up the transparent background image in the header */
@@ -87,18 +81,14 @@ footer {
   text-align: center;
   padding: .25em;
 }
-
 footer p {
- // position: absolute;
   display: inline-block;
-
   margin: 0 auto;
   background: $third-color;
 }
 
 h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans';
-flex: 1 1 100%;
  }
 
 h2 {
@@ -311,7 +301,9 @@ article {
 
 /* adjusts the size of first letter in h1.  I had already set up a span to uppercase it and float it,  so I stuckc with it */
 
-
+h2,h3, h4, h5, h6 {
+  flex: 1 1 100%;
+}
 
 nav ul {
     
@@ -382,9 +374,7 @@ h3 {
 }
 }
 
-#sidebar #radius {
-  border-radius: 7px;
-}
+
 article {
     
      flex: 0 1 49%;
@@ -489,6 +479,12 @@ article {
   #inner_wrapper {
 	display: grid;
   grid-template-columns: 8fr 2fr;
+  background: grey;
+}
+
+h2, h3, h4, h5, h6 {
+  //flex: 1 1 100%;
+  grid-column: 1/2;
 }
 	ul {
 		grid-column: 1/4;
@@ -520,13 +516,17 @@ article {
 		 
 	}
 figure {
-  margin-left: .5em;
+  margin-left: 2em;
   padding-right: .5em;
   padding-right:0;
 }
 
 p {
-   
+  background: $panel-color;
+  margin: 0;
+  padding: .5em;
+
+
 }
    header {
    	 

@@ -1,6 +1,5 @@
 
 $base-time: .5s;
-
 .terrain {
 			animation: 2s fadeOut;
 			animation-fill-mode: forwards;
@@ -56,26 +55,19 @@ $base-time: .5s;
 	@include moving(5, 300em, 8.5s);
 }
 .base {
-animation: 2s fadeOut;
-			animation-fill-mode:forwards;
-			animation-delay: 10s;
-
-	 
+	animation: 2s fadeOut;
+	animation-fill-mode:forwards;
+	animation-delay: 10s;
 }
 .globe {
 	animation: 2s fadeOut;
 	animation-fill-mode:forwards;
 	animation-delay: 10s;
 }
-
-
- 
 .letter_pull {
-    
-	@include moving(10, -100em, 10s);
+    @include moving(10, -100em, 10s);
 	transition: fill 4s;
 }
-
 
 @keyframes slant {
 	0% { 
@@ -97,7 +89,6 @@ animation: 2s fadeOut;
 		transform: skew(0deg, 0deg);
 	}
 }
-
 .letter_skew {
 	animation: 3s slant;
 	animation-delay: 10s;

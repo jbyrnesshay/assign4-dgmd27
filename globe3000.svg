@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="css/styles.css" type="text/css"?>
 <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- globe originally downloaded from the Noun Project from link https://thenounproject.com/term/globe/926178/ -->
+<!-- credit to logan for the original file and particularly for the globe-base.  file was signficantly edited in Illustrator, the original circle which was in path data was removed and I added a new circle using the circle element, for greater ease of manipulating the layers, and I added new layers in the SVG and added my own groups in order that i can apply animation to individual layers as I wish -->
 <svg version="1.1" width="8000px" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-
 	<style type="text/css">
-text {
-	color: red;
-}
-</style>
-	 
+	</style>
 	<g id="svg_all">
 		<g id="Layer_1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
 			<path class="base" d="M192.7,58.1c-12.1,0-24.1,4.6-33.3,13.8C56.5,174.7,0,311.4,0,456.7C0,602,56.5,738.7,159.4,841.4
@@ -17,116 +14,100 @@ text {
 				c-18.4-18.4-48.3-18.4-66.7,0c-84.9,84.9-197.9,131.7-318.1,131.7c-120.1,0-233.1-46.8-318.1-131.7S94.3,576.8,94.3,456.7
 				c0-120.2,46.8-233.1,131.7-318.1c18.4-18.4,18.4-48.2,0-66.7C216.8,62.7,204.8,58.1,192.7,58.1z M544.1,64.2L544.1,64.2
 				M936.6,456.7 M544.1,849.2 M151.7,456.7 M246.1,456.7 M842.3,456.7"/>
-				<text transform="matrix(1 0 0 1 0 1116.995)" class="text1 text2">Created by logan</text>
-				<text transform="matrix(1 0 0 1 0 1121.995)" class="text1 text2">from the Noun Project</text>
+			<text transform="matrix(1 0 0 1 0 1116.995)" class="text1 text2">Created by logan<!--logan's original tag--></text>
+			<text transform="matrix(1 0 0 1 0 1121.995)" class="text1 text2">from the Noun Project</text>
+		</g>
+		<g id="group1">
+			<!--an animation included inside svg -->
+			<animateTransform attributeName="transform"
+				attributeType="XML"
+				type="rotate"
+				from="0"
+				to="360"
+				dur="3s"
+				repeatCount="indefinite">
+			</animateTransform>
+			<g id="Layer_2">
+				<circle class="globe" cx="537.1" cy="473.1" r="350"/>
+				<g class="letter_pull">
+					<g class="letter_skew">
+						<text x="275" y="750" class="letter T1">T</text>
+					</g>
+				</g>
 			</g>
-			<g id="group1" class='moveh'>
-			
-				<animateTransform attributeName="transform"
-                          attributeType="XML"
-                          type="rotate"
-                          from="0"
-                          to="360"
-                          dur="3s"
-                          repeatCount="indefinite"
-                          ></animateTransform>
-
-				<g id="Layer_2">
-					<!--<polygon class="st3" points="659.7,472.3 659.7,475.7 662.6,477.4 665.5,475.7 665.5,472.3 662.6,470.6 	"/>-->
+			<g id="Layer_3">
+				<path class="terrain" d="M199.9,378.9c40.9-13.4,81.8-26.9,122.7-40.3c26,25.5,52,51,78,76.5c81.2-14,145.6-70.8,163.5-144
+					c18.3-74.5-19.1-135.6-27-148"/>
+				<path class="terrain" d="M407.2,798.7c-34.9-58-34.8-123.1-2.1-161.1c38-44.3,105.5-34.8,129-31.5c121.5,17.1,184.5,142,193.8,161"/>
+			</g>
+		</g>
+		<g id="group2" class=''>
+			<g id="move2">
+				<g id="Layer_4">
 					<circle class="globe" cx="537.1" cy="473.1" r="350"/>
 					<g class="letter_pull">
-					<g class="letter_skew">
-					<text x="275" y="750" class="letter T1">T</text>
+						<g class="letter_skew">
+							<text x="400" y="750" class="letter i">i</text>
+						</g>
+					</g>
 				</g>
-					 </g>
-					 
-				</g>
-				<g id="Layer_3">
-					<path class="terrain" d="M199.9,378.9c40.9-13.4,81.8-26.9,122.7-40.3c26,25.5,52,51,78,76.5c81.2-14,145.6-70.8,163.5-144
-						c18.3-74.5-19.1-135.6-27-148"/>
-						<path class="terrain" d="M407.2,798.7c-34.9-58-34.8-123.1-2.1-161.1c38-44.3,105.5-34.8,129-31.5c121.5,17.1,184.5,142,193.8,161"/>
-				</g>
-			</g>
-			 
-			<g id="group2" class=''>
-				<g id="move2">
-				<g id="Layer_4">
-					<!--<polygon class="st3" points="659.7,472.3 659.7,475.7 662.6,477.4 665.5,475.7 665.5,472.3 662.6,470.6 	"/>-->
-					<circle class="globe" cx="537.1" cy="473.1" r="350"/>
-					 <g class="letter_pull">
-					 	<g class="letter_skew">
-					<text x="400" y="750" class="letter i">i</text>
-				</g>
-				</g>
-				</g>	 
-			
 				<g id="Layer_5">
 					<path class="terrain" d="M199.9,378.9c40.9-13.4,81.8-26.9,122.7-40.3c26,25.5,52,51,78,76.5c81.2-14,145.6-70.8,163.5-144
 						c18.3-74.5-19.1-135.6-27-148"/>
-						<path class="terrain" d="M407.2,798.7c-34.9-58-34.8-123.1-2.1-161.1c38-44.3,105.5-34.8,129-31.5c121.5,17.1,184.5,142,193.8,161"/>
+					<path class="terrain" d="M407.2,798.7c-34.9-58-34.8-123.1-2.1-161.1c38-44.3,105.5-34.8,129-31.5c121.5,17.1,184.5,142,193.8,161"/>
 				</g>
-					</g>
 			</g>
-			<g id="group3">
-				<g id="move3">
+		</g>
+		<g id="group3">
+			<g id="move3">
 				<g id="Layer_6">
-					<!--<polygon class="st3" points="659.7,472.3 659.7,475.7 662.6,477.4 665.5,475.7 665.5,472.3 662.6,470.6 	"/>-->
 					<circle class="globe" cx="537.1" cy="473.1" r="350"/>
-					 <g class="letter_pull">
-					 	<g class="letter_skew">
-					<text x="340" y="750" class="letter b">b</text>
-					 </g>
+					<g class="letter_pull">
+						<g class="letter_skew">
+							<text x="340" y="750" class="letter b">b</text>
+						</g>
 					</g>
 				</g>
 				<g id="Layer_7">
 					<path class="terrain" d="M199.9,378.9c40.9-13.4,81.8-26.9,122.7-40.3c26,25.5,52,51,78,76.5c81.2-14,145.6-70.8,163.5-144
 						c18.3-74.5-19.1-135.6-27-148"/>
-						<path class="terrain" d="M407.2,798.7c-34.9-58-34.8-123.1-2.1-161.1c38-44.3,105.5-34.8,129-31.5c121.5,17.1,184.5,142,193.8,161"/>
+					<path class="terrain" d="M407.2,798.7c-34.9-58-34.8-123.1-2.1-161.1c38-44.3,105.5-34.8,129-31.5c121.5,17.1,184.5,142,193.8,161"/>
 				</g>
 			</g>
-			</g>
-			<g id="group4">
-				<g id="move4">
+		</g>
+		<g id="group4">
+			<g id="move4">
 				<g id="Layer_8">
-					<!--<polygon class="st3" points="659.7,472.3 659.7,475.7 662.6,477.4 665.5,475.7 665.5,472.3 662.6,470.6 	"/>-->
 					<circle class="globe" cx="537.1" cy="473.1" r="350"/>
-					 <g class="letter_pull">
-					 	<g class="letter_skew">
-					<text x="340" y="750" class="letter e">e</text>
-					 </g>
+					<g class="letter_pull">
+						<g class="letter_skew">
+							<text x="340" y="750" class="letter e">e</text>
+						</g>
 					</g>
 				</g>
 				<g id="Layer_9">
 					<path class="terrain" d="M199.9,378.9c40.9-13.4,81.8-26.9,122.7-40.3c26,25.5,52,51,78,76.5c81.2-14,145.6-70.8,163.5-144
 						c18.3-74.5-19.1-135.6-27-148"/>
-						<path class="terrain" d="M407.2,798.7c-34.9-58-34.8-123.1-2.1-161.1c38-44.3,105.5-34.8,129-31.5c121.5,17.1,184.5,142,193.8,161"/>
+					<path class="terrain" d="M407.2,798.7c-34.9-58-34.8-123.1-2.1-161.1c38-44.3,105.5-34.8,129-31.5c121.5,17.1,184.5,142,193.8,161"/>
 				</g>
 			</g>
-			</g>
-			<g id="group5">
-				<g id="move5">
+		</g>
+		<g id="group5">
+			<g id="move5">
 				<g id="Layer_10">
-					<!--<polygon class="st3" points="659.7,472.3 659.7,475.7 662.6,477.4 665.5,475.7 665.5,472.3 662.6,470.6 	"/>-->
 					<circle class="globe" cx="537.1" cy="473.1" r="350"/>
-					 <g class="letter_pull">
-					 	<g class="letter_skew">
-					<text x="400" y="750" class="letter t">t</text>
-				</g>
-					 </g>
+					<g class="letter_pull">
+						<g class="letter_skew">
+							<text x="400" y="750" class="letter t">t</text>
+						</g>
+					</g>
 				</g>
 				<g id="Layer_11">
 					<path class="terrain" d="M199.9,378.9c40.9-13.4,81.8-26.9,122.7-40.3c26,25.5,52,51,78,76.5c81.2-14,145.6-70.8,163.5-144
 						c18.3-74.5-19.1-135.6-27-148"/>
 						<path class="terrain" d="M407.2,798.7c-34.9-58-34.8-123.1-2.1-161.1c38-44.3,105.5-34.8,129-31.5c121.5,17.1,184.5,142,193.8,161"/>
-
 				</g>
 			</g>
-			</g>
-
-
-
-			</g>
-		  
-			 
-			
-		</svg>
+		</g>
+	</g>
+</svg>
