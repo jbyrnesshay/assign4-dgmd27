@@ -1,0 +1,47 @@
+ 
+ 
+
+ 
+
+/* animation */
+
+#svg {
+	margin-top: 20%;
+}
+	   svg {
+ 	height: 100%;
+ 	width:  100%;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	transition: transform 1s;
+
+ }
+    #block {
+	   	
+	   	/*animation:  moving 10s linear infinite, rotation 2s linear infinite;*/
+	   	animation-name:  moving;
+	   	animation-duration:  10s, 2s;
+	   	animation-timing-function:  linear;
+	   	animation-iteration-count:  infinite;
+	   	transform-origin: 50% 50%;
+   
+	   	
+	   }
+
+
+	@keyframes moving {
+			0% {transform: translate(0px, 0px) rotate(0deg); fill: blue;}
+
+			30% {transform: translate(400px, 0px) rotate(270deg); fill: yellow;}
+			
+			/*55% {transform: rotate(40deg)}*/
+			60% {transform: translate(900px, 200px) rotate(540deg); fill: green;}
+			/*70% {transform: rotate(170deg)}*/
+			90% {transform: translate(200px, 100px) rotate(810deg); fill: purple;}
+			100% {transform: translate(0px, 0px) rotate(360deg); fill: blue;}
+
+			 
+
+		}
+ 

@@ -151,9 +151,52 @@ nav ul li {
   border-bottom: 1px solid black;
   border-left: 0px solid black;
   border-style: solid;
+  transition: filter 2s;
+  transitation: scaleY 1s;
 }
 
-/* line 168, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 166, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+nav ul:hover li:not(:hover) {
+  filter: blur(10px);
+}
+
+/* line 170, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+nav ul:hover li:hover {
+  transform: scaleY(1.2);
+}
+
+/* line 177, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+img {
+  transition: border 2s;
+  transition: border-radius 2s;
+  position: relative;
+  padding: 1em;
+  border: 10px solid black;
+  padding: 0;
+}
+
+/* line 185, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+img:first-of-type:hover {
+  border: 10px solid #f89921;
+  border-radius: 100px;
+  filter: contrast(200%);
+  filter: invert(100%);
+}
+
+/* line 195, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+figure ~ div p {
+  transition: background 4s;
+}
+
+/* line 199, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+figure:hover ~ div p {
+  background: #eacca0;
+  filter: drop-shadow(15px 15px 15px black);
+  transform: skewX(-5deg);
+  border: 1px solid black;
+}
+
+/* line 212, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 article {
   background: #f9f1f1;
   background: #f5f1eb;
@@ -161,13 +204,13 @@ article {
   padding: 0 1em 0 1em;
 }
 
-/* line 192, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 236, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .img-article {
   margin-bottom: .5em;
   padding: 0 1em 0 1em;
 }
 
-/* line 204, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 248, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 .aarticle {
   margin-bottom: .5em;
   padding: 0 1em 0 1em;
@@ -177,7 +220,7 @@ article {
    margin-left: 2em;
 }*/
 /*nested styles for flexbox page start here */
-/* line 226, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 270, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox {
   /* adjusts the size of first letter in h1.  I had already set up a span to uppercase it and float it,  so I stuckc with it */
   /*article:nth-of-type(even) {
@@ -185,13 +228,13 @@ article {
 }*/
 }
 
-/* line 228, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 272, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .headertext {
   align-self: flex-start;
   flex: 0 0 50%;
 }
 
-/* line 235, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 279, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .flex {
   display: flex;
   flex-flow: row nowrap;
@@ -199,54 +242,54 @@ article {
   justify-content: space-between;
 }
 
-/* line 246, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 290, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox nav ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
 
-/* line 260, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 304, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox nav ul li {
   flex-basis: 10%;
 }
 
-/* line 271, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 315, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox article {
   flex: 0 1 49%;
   flex-flow: column nowrap;
 }
 
-/* line 280, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 324, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .one {
   flex: 1 1 50%;
   flex-row: row nowrap;
 }
 
-/* line 284, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 328, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .col-2 {
   flex: 0 1 66%;
 }
 
-/* line 287, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 331, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .col-1 {
   flex: 0 1 32%;
 }
 
-/* line 290, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 334, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .img-article {
   flex: 0 1 40%;
   flex-row: column nowrap;
   display: flex;
 }
 
-/* line 300, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 344, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .aarticle {
   flex: 0 1 48%;
   display: flex;
 }
 
-/* line 312, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 356, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #flexbox .row {
   display: flex;
   flex-flow: row nowrap;
@@ -255,61 +298,61 @@ article {
 }
 
 @media screen and (max-width: 699px) {
-  /* line 320, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+  /* line 364, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox .row {
     display: flex;
     flex-flow: column nowrap;
   }
-  /* line 328, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+  /* line 372, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox article {
     flex: 1 0 100%;
     background: orange;
   }
-  /* line 333, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+  /* line 377, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox .img-article {
     flex-flow: column nowrap;
     padding: 0 .25em 0 .25em;
   }
-  /* line 337, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+  /* line 381, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox img {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 342, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+  /* line 386, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox figure, #flexbox picture {
     padding: 0;
   }
-  /* line 345, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+  /* line 389, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox figure {
     width: 100%;
     position: relative;
     margin: 0 auto;
   }
-  /* line 352, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+  /* line 396, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox img {
     width: inherit;
   }
-  /* line 354, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+  /* line 398, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
   #flexbox .two {
     order: 3;
   }
 }
 
 /* cssgrid page */
-/* line 368, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 412, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid ul {
   grid-column: 1/4;
   display: flex;
   flex: row nowrap;
 }
 
-/* line 373, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 417, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid li {
   flex-basis: 25%;
 }
 
-/* line 377, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 421, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid #maincontent {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -318,113 +361,329 @@ article {
   grid-row-gap: .5em;
 }
 
-/* line 386, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 430, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid nav {
   display: grid;
   grid-template-columns: 25em 25em 25em 25em 25em 25em 25em 25em 25em;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-/* line 403, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 447, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .one {
   grid-row: 1/2;
   grid-column: 1/11;
 }
 
-/* line 408, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 452, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .two {
   grid-row: 2/3;
   grid-column: 1/5;
 }
 
-/* line 413, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 457, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .three {
   grid-row: 2/3;
   grid-column: 5/11;
 }
 
-/* line 418, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 462, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .four {
   grid-row: 3/4;
   grid-column: 1/4;
 }
 
-/* line 423, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 467, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .five {
   grid-row: 3/4;
   grid-column: 4/11;
 }
 
-/* line 429, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 473, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .one, #cssgrid .three {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
 
-/* line 434, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 478, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .one h2, #cssgrid .one h3, #cssgrid .three h2, #cssgrid .three h3 {
   grid-column: 1/3;
   align-self: start;
 }
 
-/* line 439, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 483, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .one figure, #cssgrid .three figure {
   grid-column: 1/2;
 }
 
-/* line 442, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
+/* line 486, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_base.scss */
 #cssgrid .one div, #cssgrid .three div {
   grid-column: 2/3;
 }
 
-/* animation */
-/* line 8, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.css */
-#svg {
-  margin-top: 20%;
+/* line 4, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+.base {
+  fill: #4e4e43;
+  stroke: #FFFFFF;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
 }
 
-/* line 11, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.css */
-svg {
-  height: 100%;
-  width: 100%;
+/* line 5, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+.text1 {
+  font-family: 'Arial-BoldMT';
+}
+
+/* line 6, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+.text2 {
+  font-size: 5px;
+}
+
+/* line 7, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+.st3 {
+  display: none;
+  fill: #E6E7E8;
+  stroke: #231F20;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+/* line 8, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+.terrain {
+  fill: #0af20f;
+  stroke: #231F20;
+  stroke-miterlimit: 1;
+}
+
+/* line 9, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+.globe {
+  fill: #c3e6fc;
+}
+
+/* line 10, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+text {
+  z-index: 50;
+}
+
+/* line 13, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+circle {
+  z-index: 1;
+}
+
+/* line 16, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+#Layer_3 {
+  z-index: 0;
+}
+
+/* line 20, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+#svg_all {
+  transform: scale(0.1);
   position: absolute;
-  top: 0;
+  left: -10em;
+  display: inline-block;
+}
+
+/* line 29, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+.T1, .i, .b, .e, .t {
+  font-size: 50em;
+  opacity: 0;
+}
+
+/* line 34, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+object {
+  display: block;
+  position: absolute;
   left: 0;
-  transition: transform 1s;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 500;
 }
 
-/* line 20, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.css */
-#block {
-  /*animation:  moving 10s linear infinite, rotation 2s linear infinite;*/
-  animation-name: moving;
-  animation-duration: 10s, 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 50%;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
-@keyframes moving {
+@keyframes fadeOut {
   0% {
-    transform: translate(0px, 0px) rotate(0deg);
-    fill: blue;
-  }
-  30% {
-    transform: translate(400px, 0px) rotate(270deg);
-    fill: yellow;
-  }
-  /*55% {transform: rotate(40deg)}*/
-  60% {
-    transform: translate(900px, 200px) rotate(540deg);
-    fill: green;
-  }
-  /*70% {transform: rotate(170deg)}*/
-  90% {
-    transform: translate(200px, 100px) rotate(810deg);
-    fill: purple;
+    opacity: 1;
+    visibility: visible;
   }
   100% {
-    transform: translate(0px, 0px) rotate(360deg);
-    fill: blue;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* line 164, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+.terrain {
+  animation: 2s fadeOut;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+/* line 170, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+#group2, #group3, #group4, #group5 {
+  opacity: 0;
+}
+
+/* line 174, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+[id*='group'] {
+  transform-origin: 537.1px 473.1px;
+}
+
+/* line 178, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+.T1 {
+  animation: 2s fadeIn2;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+/* line 182, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+#group1 {
+  display: block;
+  animation: rotationmove 2s;
+  animation-duration: 2s, 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite, infinite;
+  animation-iteration-count: 1;
+  transform-origin: 537.1px 473.1px;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes rotationmove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(200em, 0px);
+  }
+}
+
+/* line 189, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+#group2 {
+  animation: 2s fadeIn;
+  animation-fill-mode: forwards;
+  transform-origin: 537.1px 473.1px;
+  transition: translate 4s;
+  transform: translate(0px, 0px);
+  animation-delay: 7s;
+}
+
+/* line 196, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+#move2 {
+  animation: rotationmove 2s;
+  animation-duration: 2s, 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite, infinite;
+  animation-iteration-count: 1;
+  transform-origin: 537.1px 473.1px;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+@keyframes rotationmove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(40em, 0px);
+  }
+}
+
+/* line 201, C:/Users/winescape-xx/Desktop/assign4/sass/partials/_svg.scss */
+.i {
+  animation: 2s fadeIn2;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+}
+
+/*
+		#group3 {
+			@include globe_appear(6s);
+		}
+		#group4 {
+			@include globe_appear(8s);
+		}
+		#group5 {
+			@include globe_appear(10s);
+		}
+
+		 */
+/*
+		.b {
+		@include letter_appear(8s);
+		}
+		.e {
+	@include letter_appear(10s);
+
+		}
+		.t {
+		@include letter_appear(12s);
+		}
+		  
+
+
+		
+		#group3 {
+		@include move_svg(150em, 8s);
+		}
+		#group4 {
+		@include move_svg(200em, 10s);
+		}
+		#group5 {
+		@include move_svg(250em, 12s);
+		}
+
+		 
+		/*#group2, #group3, #group4, #group5 {
+		animation: 2s fadeIn;
+		animation-fill-mode:forwards;
+		opacity: 0;
+		transform-origin: 537.1px 473.1px;
+		transition: translate 4s;
+	    transform: translate(0px, 0px);
+		
+		}*/
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
