@@ -49,7 +49,7 @@
 					<!--<polygon class="st3" points="659.7,472.3 659.7,475.7 662.6,477.4 665.5,475.7 665.5,472.3 662.6,470.6 	"/>-->
 					<circle class="globe" cx="537.1" cy="473.1" r="350"/>
 					 
-					<text x="275" y="750" class="i">i</text>
+					<text x="400" y="750" class="i">i</text>
 				</g>	 
 			
 				<g id="Layer_5">
@@ -65,7 +65,7 @@
 					<!--<polygon class="st3" points="659.7,472.3 659.7,475.7 662.6,477.4 665.5,475.7 665.5,472.3 662.6,470.6 	"/>-->
 					<circle class="globe" cx="537.1" cy="473.1" r="350"/>
 					 
-					<text x="275" y="750" class="b">b</text>
+					<text x="340" y="750" class="b">b</text>
 					 
 				</g>
 				<g id="Layer_7">
@@ -81,7 +81,7 @@
 					<!--<polygon class="st3" points="659.7,472.3 659.7,475.7 662.6,477.4 665.5,475.7 665.5,472.3 662.6,470.6 	"/>-->
 					<circle class="globe" cx="537.1" cy="473.1" r="350"/>
 					 
-					<text x="275" y="750" class="e">e</text>
+					<text x="340" y="750" class="e">e</text>
 					 
 				</g>
 				<g id="Layer_9">
@@ -97,7 +97,7 @@
 					<!--<polygon class="st3" points="659.7,472.3 659.7,475.7 662.6,477.4 665.5,475.7 665.5,472.3 662.6,470.6 	"/>-->
 					<circle class="globe" cx="537.1" cy="473.1" r="350"/>
 					 
-					<text x="275" y="750" class="t">t</text>
+					<text x="400" y="750" class="t">t</text>
 					 
 				</g>
 				<g id="Layer_11">
