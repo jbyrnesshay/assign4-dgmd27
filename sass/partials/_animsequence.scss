@@ -1,61 +1,109 @@
 
+$base-time: .5s;
 
+.terrain {
+			animation: 2s fadeOut;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+}
 /*first letter */
+.T1 {
+	@include letter_appear(2s);
+}
 #group1 {
 	display:block;
-	@include moving(1, 100em, 2s);
+	@include moving(1, 100em, 2.5s);
 }
 /*second letter */
 #group2 {
-	@include globe_appear(4s);
+	@include globe_appear(3s);
 	}
 .i {
-	@include letter_appear(5s);
+	@include letter_appear(3.5s);
 }
 #move2 {
 	display:block;
-	@include moving(2, 150em, 6s);
+	@include moving(2, 150em, 4s);
 }
-
 /*third letter */
 #group3 {
-	@include globe_appear(7s);
-
-	
-
+	@include globe_appear(4.5s);
 }
 .b {
-	@include letter_appear(8s);
+	@include letter_appear(5s);
 }
 #move3 {
-	@include moving(3, 200em, 9s);
+	@include moving(3, 200em, 5.5s);
 }
-
-
-
-
-
 /*fourth letter */
 #group4 {
-	@include globe_appear(10s);
+	@include globe_appear(6s);
 }
 .e {
-	@include letter_appear(11s);
+	@include letter_appear(6.5s);
 }
 #move4 {
-	@include moving(4, 250em, 12s);
+	@include moving(4, 250em, 7s);
 }
-
-
-
 /*fifth letter */
 #group5 {
-	@include globe_appear(13s);
+	@include globe_appear(7.5s);
 }
 .t {
-	@include letter_appear(14s);
+	@include letter_appear(8s);
 }
 #move5 {
-	@include moving(5, 300em, 15s);
+	@include moving(5, 300em, 8.5s);
 }
+.base {
+animation: 2s fadeOut;
+			animation-fill-mode:forwards;
+			animation-delay: 10s;
+
+	 
+}
+.globe {
+	animation: 2s fadeOut;
+	animation-fill-mode:forwards;
+	animation-delay: 10s;
+}
+
+
+ 
+.letter_pull {
+    
+	@include moving(10, -100em, 10s);
+	transition: fill 4s;
+}
+
+
+@keyframes slant {
+	0% { 
+		transform: skew(0deg, 0deg);
+	}
+	20% {
+		transform: skew(5deg, 5deg);
+	}
+	50% {
+		transform: skew(25deg, 25deg);
+	}
+	65% {
+		transform: skew(15deg, 15deg);
+	}
+	75% {
+		transform: skew(5deg, 5deg);
+	}
+	100% {
+		transform: skew(0deg, 0deg);
+	}
+}
+
+.letter_skew {
+	animation: 3s slant;
+	animation-delay: 10s;
+	animation-fill-mode:forwards;
+ 
+}
+
+
 

@@ -1,8 +1,23 @@
+@mixin border-define($top, $right, $bottom, $left, $color: black, $style: solid) {
+    //$list: $top $right $bottom $left;
+    $min: 1px;
 
+    //$topx: $top * $min;
+    $topx: $top * $min;
+    $rightx: $right * $min;
+    $bottomx: $bottom * $min;
+    $leftx: $left * $min;
+
+    border-top: $topx solid $color;
+    border-right: $rightx solid $color;
+    border-bottom: $bottomx solid $color;
+    border-left: $leftx solid $color;
+    border-style: $style;
+}
 
  @keyframes rotation {
-		from {transform: rotate(0deg);}
-		to {transform: rotate(359deg);}
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(10deg);}
 		}
 
 
@@ -46,10 +61,10 @@
 					transform: translate(0px, 0px);
 					
 				}
-				25% {
-					transform: scale(1.2);
+				10% {
+					transform: scale(1.7);
 				}
-				50% {
+				30% {
 					transform: scale(1);
 				}
 				75% {

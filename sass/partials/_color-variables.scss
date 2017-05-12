@@ -1,7 +1,7 @@
 $first-color: hsl(220, 100%, 50%);
 $first-color-darken: darken($first-color, 15%);
 $prime-color: desaturate($first-color-darken, 35%);
-$brown: desaturate(darken(brown, 15%), 15%);
+$brown: desaturate(darken(brown, 20%), 15%);
 
 $second-color: adjust-hue($first-color, 180);
 $fourth-color: adjust-hue($first-color, 30);

@@ -14,8 +14,10 @@
     border-left: $leftx solid $color;
     border-style: $style;
 }
-svg * {
-    //width: 500em;
+svg {
+    position: absolute;
+    top: 1em;
+    padding-left: .4em;
 }
 /* border box everything in the universe, and what comes before and after, by Paul Irish 
 http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
