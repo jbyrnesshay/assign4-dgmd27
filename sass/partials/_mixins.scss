@@ -10,6 +10,8 @@
     border-left: $leftx solid $color;
     border-style: $style;
 }	
+
+/* used to fade items out in svg animation */
 @keyframes fadeOut {
 	0% {
 		opacity: 1;
@@ -19,7 +21,7 @@
 		opacity: 0;
 	}
 }
-
+/* used to fade items in svg animation */
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -29,15 +31,9 @@
 	}
 }
 
-@keyframes fadeIn2 {
-	from {
-	 	opacity: 0;
-	}
- 	to {
-		opacity: 1;
- 	}
-}
 
+/* the moving mixins are used to animate each of the letters in t-i-b-e-t one by one, within the svg */
+/* numerous groups are used  due to difficulties using transform on a single element, so I used a lot of wrapping */
 @mixin moving($name, $distance, $time) {
 	$keyframe_prefix: "motion";
 	@keyframes #{$keyframe_prefix+$name} {
@@ -67,18 +63,18 @@
 	animation-delay: #{$time};
 }
 		
-
+/* controls the appearance of letters */
 @mixin letter_appear($delay) {
 	animation: 2s fadeIn;
 	animation-fill-mode:forwards;
 	animation-delay: $delay;
 }
- 
+/* times the appearance of the globes holding the 2nd through 5th letters */
 @mixin globe_appear($delay) {
 	animation: 2s fadeIn2;
 	animation-fill-mode:forwards;
 	transform-origin: 537.1px 473.1px;
-	transition: translate 4s;
+	transition: transform 4s;
     transform: translate(0px, 0px);
     animation-delay:$delay;
     animation-duration: 3s;

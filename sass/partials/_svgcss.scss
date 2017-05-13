@@ -1,7 +1,7 @@
 
 
-
- .base{fill:#4e4e43;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+/*svg styles and animations begin here */
+ .base{fill:#4e4e43;stroke:#FFFFFF;stroke-width:3px;stroke-miterlimit:10;}
 		.text1{font-family:'Arial-BoldMT';}
 		.text2{font-size:5px;}
 		.st3{display:none;fill:#E6E7E8;stroke:#231F20;stroke-linecap:round;stroke-miterlimit:10;}
@@ -28,7 +28,7 @@
 			 
 
 		}
-	 
+	
 
 		object {
 			display:block;
@@ -43,16 +43,13 @@
        svg {
        	overflow:hidden;
        }
-		#maincontent, nav {
-			//z-index: -1;
-			//position:absolute;
-		} 
+		/* .terrain is the spinning land that can be seen on the globe on page load, which then fades */
 		.terrain {
 			animation: 2s fadeOut;
 			animation-fill-mode: forwards;
 			animation-delay: 2s;
 		}
-
+		/* these groups hold the layers for the 2nd through 5th letters of page title (tibet ) and are hidden at first, but then anaimated */
  		#group2, #group3, #group4, #group5 {
    			opacity:0;
    		}

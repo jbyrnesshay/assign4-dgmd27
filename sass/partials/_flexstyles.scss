@@ -1,0 +1,87 @@
+
+
+#inner_wrapper {
+  display:flex;
+   flex-flow: row wrap;
+  flex: 0 1 auto;
+   background-color: #ccc;
+   justify-content: space-around;
+  //  display: grid;
+  //grid-template-columns: 8fr 2fr;
+  //background: grey;
+}
+
+ #maincontent {
+flex: 0 1 80%;
+}
+#sidebar {
+flex: 0 1 16%;
+background: gray;
+border-left: 1px solid black;
+h2 {
+margin: 0;
+margin-top: .8em;
+padding: 0;
+margin-bottom: 2em;
+}
+article {
+  background: gray;
+}
+img {
+  border-color: white;
+  margin-bottom: 2em;
+  height: 100%;
+
+}
+
+p {
+  background: $panel-color;
+  margin: 0;
+  padding: .5em;
+
+
+}
+h3 {
+
+  margin: 0;
+}
+}
+
+
+article {
+    
+     flex: 0 1 49%;
+    
+   
+    flex-flow: column nowrap;
+    
+}
+ 
+.one {
+  flex: 1 1 50%;
+   flex-row: row nowrap;
+}
+.col-2 {
+  flex: 0 1 66%;
+}
+.col-1 {
+  flex: 0 1 32%;
+}
+.img-article {
+    flex: 0 1 40%;
+  //justify-content: space-between;
+    //margin: 1%;
+    
+    flex-row: column nowrap;
+    display: flex;
+
+}
+ 
+
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 100%;
+    justify-content: space-between;
+}
